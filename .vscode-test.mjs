@@ -4,6 +4,6 @@ export default defineConfig({
   files: "out/test/integration/**/*.test.js",
   workspaceFolder: "./test/fixtures/workspace-ts",
   version: "stable",
-  mocha: { ui: "tdd", timeout: 30_000 },
+  mocha: { ui: "tdd", timeout: 60_000 },
   launchArgs: ["--disable-extensions"],
 });

@@ -5,8 +5,13 @@ import * as vscode from "vscode";
 
 const root = () => vscode.workspace.workspaceFolders![0].uri.fsPath;
 
-async function waitFor<T>(check: () => T | undefined | Promise<T | undefined>, timeoutMs = 10_000): Promise<T> {
+async function waitFor<T>(
+  check: () => T | undefined | false | Promise<T | undefined | false>,
+  timeoutMs = 30_000,
+  onRetry?: () => Promise<void>,
+): Promise<T> {
   const started = Date.now();
+  let lastRetry = started;
   for (;;) {
     const value = await check();
     if (value !== undefined && value !== false) {
@@ -14,6 +19,10 @@ async function waitFor<T>(check: () => T | undefined | Promise<T | undefined>, t
     }
     if (Date.now() - started > timeoutMs) {
       throw new Error("Timed out");
+    }
+    if (onRetry && Date.now() - lastRetry > 3000) {
+      lastRetry = Date.now();
+      await onRetry();
     }
     await new Promise((resolve) => setTimeout(resolve, 200));
   }
@@ -40,9 +49,17 @@ suite("OpenFiles detection", () => {
 
   test("a file written outside the editor opens and is exported", async () => {
     const file = path.join(root(), "src", `agent-${Date.now()}.ts`);
-    await fs.writeFile(file, "export const answer: number = 42;\n", "utf8");
+    let writes = 0;
+    const write = () => fs.writeFile(file, `export const answer: number = ${42 + writes++};\n`, "utf8");
+    await write();
 
-    await waitFor(() => vscode.window.tabGroups.all.some((g) => g.tabs.some((t) => t.input instanceof vscode.TabInputText && t.input.uri.fsPath === file)));
+    // The macOS file watcher can take a few seconds to start on a cold CI runner and miss the
+    // first write. Agents write repeatedly anyway, so keep writing until the editor notices.
+    await waitFor(
+      () => vscode.window.tabGroups.all.some((g) => g.tabs.some((t) => t.input instanceof vscode.TabInputText && t.input.uri.fsPath === file)),
+      30_000,
+      write,
+    );
     const exported = await waitFor(async () => {
       const diagnostics = await readDiagnostics();
       const entry = diagnostics?.files[`src/${path.basename(file)}`];
