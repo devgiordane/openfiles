@@ -1,0 +1,52 @@
+name: Bug report
+description: Something doesn't work the way the docs say.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Install hooks for Claude Code
+        2. Ask it to edit src/app.ts
+        3. The file doesn't open
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Agent and version
+      placeholder: Claude Code 2.4.1
+  - type: input
+    id: editor
+    attributes:
+      label: Editor and version
+      placeholder: VS Code 1.104 / Cursor 1.8 / Windsurf …
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      options: [Windows, macOS, Linux, WSL, Remote SSH / Dev Container]
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Doctor report
+      description: Run "OpenFiles: Run Doctor" and paste the result.
+      render: markdown
+  - type: textarea
+    id: log
+    attributes:
+      label: Log
+      description: View → Output → OpenFiles.
+      render: text

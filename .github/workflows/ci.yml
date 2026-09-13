@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - run: npm run typecheck
+      - run: npm run build
+      - run: npm test
+      - name: Integration tests
+        run: npx tsc -p tsconfig.json --outDir out && npx vscode-test
+        if: runner.os != 'Linux'
+      - name: Integration tests (Linux)
+        run: npx tsc -p tsconfig.json --outDir out && xvfb-run -a npx vscode-test
+        if: runner.os == 'Linux'
+
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - run: npx vsce package --readme-path README.marketplace.md -o openfiles.vsix
+      - uses: actions/upload-artifact@v4
+        with:
+          name: openfiles-vsix
+          path: openfiles.vsix

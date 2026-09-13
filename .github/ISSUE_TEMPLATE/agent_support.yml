@@ -1,0 +1,34 @@
+name: Agent support request
+description: Ask for (or help with) support for an agent that isn't listed yet.
+labels: [agent-support]
+body:
+  - type: input
+    id: agent
+    attributes:
+      label: Agent
+      placeholder: Name and link
+    validations:
+      required: true
+  - type: input
+    id: docs
+    attributes:
+      label: Hook or plugin documentation
+      description: Link to where the agent documents post-edit hooks, if it has them.
+  - type: textarea
+    id: payload
+    attributes:
+      label: Sample hook payload
+      description: The JSON the agent passes to a hook after editing a file. Remove anything private.
+      render: json
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Can the hook send text back to the model?
+      description: For example Claude Code's `additionalContext`. Link the docs if you know.
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Contributing
+      options:
+        - label: I can test a build with this agent
+        - label: I'd like to open the PR myself

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions
+    url: https://github.com/devgiordane/openfiles/discussions
+    about: Ask and share setups in Discussions.
+  - name: Documentation
+    url: https://devgiordane.github.io/openfiles
+    about: Setup guides for each agent, settings, and the linter reference.
