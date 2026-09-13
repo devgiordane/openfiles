@@ -1,0 +1,46 @@
+---
+title: OpenFiles
+description: Your AI wrote it. Your linter never saw it. OpenFiles opens every file your agent touches so VS Code's linters check it, and hands the problems back to the agent.
+template: splash
+hero:
+  tagline: Your AI wrote it. Your linter never saw it. OpenFiles opens every file your agent touches, lets your linters run, and hands the problems back to the agent.
+  image:
+    file: ../../assets/icon.png
+  actions:
+    - text: Get started
+      link: getting-started/
+      icon: right-arrow
+    - text: Install from the Marketplace
+      link: https://marketplace.visualstudio.com/items?itemName=devgiordane.openfiles
+      icon: external
+      variant: minimal
+    - text: Open VSX
+      link: https://open-vsx.org/extension/devgiordane/openfiles
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+## The gap
+
+Claude Code, Codex, Copilot, Gemini CLI and OpenCode write files directly to disk. Most of VS Code's language servers, including TypeScript, ESLint, Pylance and C#, only report problems for files that are open. When an agent changes twenty files, nothing checks them.
+
+<CardGrid>
+  <Card title="Opens what the agent touched" icon="open-book">
+    A file watcher and agent hooks catch every write. Files open in background tabs, so your linters run.
+  </Card>
+  <Card title="A review list, not a surprise" icon="list-format">
+    The AI Edits sidebar gives every changed file a checkbox and a problem count. Changed again? It unchecks itself.
+  </Card>
+  <Card title="Linters talk back" icon="comment">
+    Hooks wait a few seconds for diagnostics, then hand the errors to Claude Code, Codex, Copilot, Gemini CLI or Cursor in the same turn.
+  </Card>
+  <Card title="Any agent, any VS Code" icon="puzzle">
+    Works in VS Code, Cursor, Windsurf, VSCodium, Antigravity and Kiro. Agents without hooks are covered by the watcher.
+  </Card>
+</CardGrid>
+
+## For agents
+
+This site publishes [`/llms.txt`](llms.txt) and [`/llms-full.txt`](llms-full.txt). Every page has a **Copy Markdown** button, so you can paste a page straight into your agent.
