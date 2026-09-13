@@ -1,0 +1,9 @@
+{
+  "defaultProfile": "default",
+  "profiles": {
+    "default": {
+      "include": ["src/**/*.ts", "src/**/*.tsx"],
+      "exclude": ["**/node_modules/**", "**/dist/**", "**/build/**", "**/coverage/**"]
+    }
+  }
+}

@@ -1,0 +1,783 @@
+{
+  "name": "openfiles",
+  "displayName": "OpenFiles — Review & Lint AI Edits",
+  "description": "See every file your AI agent touched. Opens files edited by Claude Code, Codex, Copilot, Cursor, Gemini CLI and OpenCode so ESLint, TypeScript and your linters actually run — and feeds the problems back to the agent.",
+  "version": "0.2.0",
+  "publisher": "devgiordane",
+  "author": {
+    "name": "Giordane Oliveira",
+    "url": "https://github.com/devgiordane"
+  },
+  "license": "MIT",
+  "icon": "media/icon.png",
+  "galleryBanner": {
+    "color": "#14161a",
+    "theme": "dark"
+  },
+  "homepage": "https://devgiordane.github.io/openfiles",
+  "bugs": {
+    "url": "https://github.com/devgiordane/openfiles/issues"
+  },
+  "qna": "https://github.com/devgiordane/openfiles/discussions",
+  "sponsor": {
+    "url": "https://github.com/sponsors/devgiordane"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devgiordane/openfiles.git"
+  },
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "AI",
+    "Linters",
+    "Other"
+  ],
+  "keywords": [
+    "ai",
+    "ai agent",
+    "agentic",
+    "claude code",
+    "codex",
+    "copilot",
+    "cursor",
+    "gemini cli",
+    "opencode",
+    "windsurf",
+    "kiro",
+    "cline",
+    "code review",
+    "review",
+    "diagnostics",
+    "problems",
+    "lint",
+    "eslint",
+    "typescript",
+    "changed files",
+    "open files",
+    "hooks",
+    "vibe coding",
+    "diff",
+    "tabs",
+    "workspace",
+    "productivity",
+    "llm",
+    "mcp",
+    "agents"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "workspaceContains:.openfiles.json"
+  ],
+  "main": "./dist/extension.js",
+  "l10n": "./l10n",
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": "limited",
+      "description": "%capabilities.untrusted%"
+    },
+    "virtualWorkspaces": false
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "openfiles.openAiEdits",
+        "title": "%command.openAiEdits%",
+        "category": "OpenFiles",
+        "icon": "$(files)"
+      },
+      {
+        "command": "openfiles.reviewNext",
+        "title": "%command.reviewNext%",
+        "category": "OpenFiles",
+        "icon": "$(arrow-right)"
+      },
+      {
+        "command": "openfiles.markReviewed",
+        "title": "%command.markReviewed%",
+        "category": "OpenFiles",
+        "icon": "$(check)"
+      },
+      {
+        "command": "openfiles.markUnreviewed",
+        "title": "%command.markUnreviewed%",
+        "category": "OpenFiles",
+        "icon": "$(circle-large-outline)"
+      },
+      {
+        "command": "openfiles.markAllReviewed",
+        "title": "%command.markAllReviewed%",
+        "category": "OpenFiles",
+        "icon": "$(check-all)"
+      },
+      {
+        "command": "openfiles.openDiff",
+        "title": "%command.openDiff%",
+        "category": "OpenFiles",
+        "icon": "$(diff)"
+      },
+      {
+        "command": "openfiles.openFile",
+        "title": "%command.openFile%",
+        "category": "OpenFiles",
+        "icon": "$(go-to-file)"
+      },
+      {
+        "command": "openfiles.removeFromSession",
+        "title": "%command.removeFromSession%",
+        "category": "OpenFiles",
+        "icon": "$(close)"
+      },
+      {
+        "command": "openfiles.showProblems",
+        "title": "%command.showProblems%",
+        "category": "OpenFiles",
+        "icon": "$(warning)"
+      },
+      {
+        "command": "openfiles.copyFixPrompt",
+        "title": "%command.copyFixPrompt%",
+        "category": "OpenFiles",
+        "icon": "$(copy)"
+      },
+      {
+        "command": "openfiles.copyAgentPrompt",
+        "title": "%command.copyAgentPrompt%",
+        "category": "OpenFiles",
+        "icon": "$(comment-discussion)"
+      },
+      {
+        "command": "openfiles.installHooks",
+        "title": "%command.installHooks%",
+        "category": "OpenFiles",
+        "icon": "$(plug)"
+      },
+      {
+        "command": "openfiles.removeHooks",
+        "title": "%command.removeHooks%",
+        "category": "OpenFiles",
+        "icon": "$(debug-disconnect)"
+      },
+      {
+        "command": "openfiles.clearSession",
+        "title": "%command.clearSession%",
+        "category": "OpenFiles",
+        "icon": "$(clear-all)"
+      },
+      {
+        "command": "openfiles.togglePause",
+        "title": "%command.togglePause%",
+        "category": "OpenFiles",
+        "icon": "$(debug-pause)"
+      },
+      {
+        "command": "openfiles.scanGitChanges",
+        "title": "%command.scanGitChanges%",
+        "category": "OpenFiles",
+        "icon": "$(git-compare)"
+      },
+      {
+        "command": "openfiles.configureStatusBar",
+        "title": "%command.configureStatusBar%",
+        "category": "OpenFiles",
+        "icon": "$(settings-gear)"
+      },
+      {
+        "command": "openfiles.statusBarMenu",
+        "title": "%command.statusBarMenu%",
+        "category": "OpenFiles"
+      },
+      {
+        "command": "openfiles.doctor",
+        "title": "%command.doctor%",
+        "category": "OpenFiles",
+        "icon": "$(pulse)"
+      },
+      {
+        "command": "openfiles.getStarted",
+        "title": "%command.getStarted%",
+        "category": "OpenFiles",
+        "icon": "$(rocket)"
+      },
+      {
+        "command": "openfiles.openProfile",
+        "title": "%command.openProfile%",
+        "category": "OpenFiles",
+        "icon": "$(folder-opened)"
+      },
+      {
+        "command": "openfiles.sync",
+        "title": "%command.sync%",
+        "category": "OpenFiles"
+      },
+      {
+        "command": "openfiles.addToProfile",
+        "title": "%command.addToProfile%",
+        "category": "OpenFiles"
+      },
+      {
+        "command": "openfiles.openConfig",
+        "title": "%command.openConfig%",
+        "category": "OpenFiles",
+        "icon": "$(json)"
+      },
+      {
+        "command": "openfiles.showOpenFiles",
+        "title": "%command.showOpenFiles%",
+        "category": "OpenFiles"
+      },
+      {
+        "command": "openfiles.refresh",
+        "title": "%command.refresh%",
+        "category": "OpenFiles",
+        "icon": "$(refresh)"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "openfiles.markReviewed",
+          "when": "openfiles.hasSession"
+        },
+        {
+          "command": "openfiles.markUnreviewed",
+          "when": "openfiles.hasSession"
+        },
+        {
+          "command": "openfiles.markAllReviewed",
+          "when": "openfiles.hasSession"
+        },
+        {
+          "command": "openfiles.reviewNext",
+          "when": "openfiles.hasSession"
+        },
+        {
+          "command": "openfiles.openFile",
+          "when": "false"
+        },
+        {
+          "command": "openfiles.removeFromSession",
+          "when": "false"
+        },
+        {
+          "command": "openfiles.statusBarMenu",
+          "when": "false"
+        },
+        {
+          "command": "openfiles.openDiff",
+          "when": "openfiles.hasSession || resourceScheme == file"
+        },
+        {
+          "command": "openfiles.addToProfile",
+          "when": "resourceScheme == file"
+        }
+      ],
+      "view/title": [
+        {
+          "command": "openfiles.reviewNext",
+          "when": "view == openfiles.aiEdits && openfiles.hasSession",
+          "group": "navigation@1"
+        },
+        {
+          "command": "openfiles.markAllReviewed",
+          "when": "view == openfiles.aiEdits && openfiles.hasSession",
+          "group": "navigation@2"
+        },
+        {
+          "command": "openfiles.togglePause",
+          "when": "view == openfiles.aiEdits",
+          "group": "navigation@3"
+        },
+        {
+          "command": "openfiles.scanGitChanges",
+          "when": "view == openfiles.aiEdits",
+          "group": "1_actions@1"
+        },
+        {
+          "command": "openfiles.copyFixPrompt",
+          "when": "view == openfiles.aiEdits && openfiles.hasSession",
+          "group": "1_actions@2"
+        },
+        {
+          "command": "openfiles.clearSession",
+          "when": "view == openfiles.aiEdits && openfiles.hasSession",
+          "group": "1_actions@3"
+        },
+        {
+          "command": "openfiles.copyFixPrompt",
+          "when": "view == openfiles.problems",
+          "group": "navigation@1"
+        },
+        {
+          "command": "openfiles.installHooks",
+          "when": "view == openfiles.agents",
+          "group": "navigation@1"
+        },
+        {
+          "command": "openfiles.doctor",
+          "when": "view == openfiles.agents",
+          "group": "navigation@2"
+        },
+        {
+          "command": "openfiles.openConfig",
+          "when": "view == openfiles.profiles",
+          "group": "navigation@1"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "openfiles.openDiff",
+          "when": "viewItem =~ /^aiEdit/",
+          "group": "inline@1"
+        },
+        {
+          "command": "openfiles.markReviewed",
+          "when": "viewItem == aiEdit.unreviewed",
+          "group": "inline@2"
+        },
+        {
+          "command": "openfiles.markUnreviewed",
+          "when": "viewItem == aiEdit.reviewed",
+          "group": "inline@2"
+        },
+        {
+          "command": "openfiles.openFile",
+          "when": "viewItem =~ /^aiEdit/",
+          "group": "1_open@1"
+        },
+        {
+          "command": "openfiles.removeFromSession",
+          "when": "viewItem =~ /^aiEdit/",
+          "group": "2_manage@1"
+        },
+        {
+          "command": "openfiles.installHooks",
+          "when": "viewItem == agent.noHook",
+          "group": "inline@1"
+        },
+        {
+          "command": "openfiles.removeHooks",
+          "when": "viewItem == agent.hooked",
+          "group": "inline@1"
+        },
+        {
+          "command": "openfiles.openProfile",
+          "when": "viewItem == profile",
+          "group": "inline@1"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "openfiles.markReviewed",
+          "when": "resourceScheme == file && openfiles.hasSession",
+          "group": "openfiles@1"
+        },
+        {
+          "command": "openfiles.openDiff",
+          "when": "resourceScheme == file && !explorerResourceIsFolder",
+          "group": "openfiles@2"
+        },
+        {
+          "command": "openfiles.addToProfile",
+          "when": "resourceScheme == file && !explorerResourceIsFolder",
+          "group": "openfiles@3"
+        }
+      ],
+      "editor/title/context": [
+        {
+          "command": "openfiles.markReviewed",
+          "when": "resourceScheme == file && openfiles.hasSession",
+          "group": "openfiles@1"
+        },
+        {
+          "command": "openfiles.openDiff",
+          "when": "resourceScheme == file",
+          "group": "openfiles@2"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "openfiles.markReviewed",
+          "when": "resourceScheme == file && openfiles.hasSession",
+          "group": "openfiles@1"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "openfiles",
+          "title": "OpenFiles",
+          "icon": "media/activitybar.svg"
+        }
+      ]
+    },
+    "views": {
+      "openfiles": [
+        {
+          "id": "openfiles.aiEdits",
+          "name": "%view.aiEdits%",
+          "icon": "media/activitybar.svg"
+        },
+        {
+          "id": "openfiles.problems",
+          "name": "%view.problems%"
+        },
+        {
+          "id": "openfiles.agents",
+          "name": "%view.agents%",
+          "visibility": "collapsed"
+        },
+        {
+          "id": "openfiles.profiles",
+          "name": "%view.profiles%",
+          "visibility": "collapsed"
+        }
+      ]
+    },
+    "viewsWelcome": [
+      {
+        "view": "openfiles.aiEdits",
+        "contents": "%welcome.aiEdits%"
+      },
+      {
+        "view": "openfiles.problems",
+        "contents": "%welcome.problems%"
+      },
+      {
+        "view": "openfiles.agents",
+        "contents": "%welcome.agents%"
+      },
+      {
+        "view": "openfiles.profiles",
+        "contents": "%welcome.profiles%"
+      }
+    ],
+    "walkthroughs": [
+      {
+        "id": "welcome",
+        "title": "%walkthrough.title%",
+        "description": "%walkthrough.description%",
+        "steps": [
+          {
+            "id": "detect",
+            "title": "%walkthrough.detect.title%",
+            "description": "%walkthrough.detect.description%",
+            "media": {
+              "markdown": "media/walkthrough/detect.md"
+            },
+            "completionEvents": [
+              "onCommand:openfiles.doctor"
+            ]
+          },
+          {
+            "id": "mode",
+            "title": "%walkthrough.mode.title%",
+            "description": "%walkthrough.mode.description%",
+            "media": {
+              "markdown": "media/walkthrough/mode.md"
+            },
+            "completionEvents": [
+              "onSettingChanged:openfiles.mode",
+              "onCommand:openfiles.getStarted"
+            ]
+          },
+          {
+            "id": "hooks",
+            "title": "%walkthrough.hooks.title%",
+            "description": "%walkthrough.hooks.description%",
+            "media": {
+              "markdown": "media/walkthrough/hooks.md"
+            },
+            "completionEvents": [
+              "onCommand:openfiles.installHooks"
+            ]
+          },
+          {
+            "id": "linters",
+            "title": "%walkthrough.linters.title%",
+            "description": "%walkthrough.linters.description%",
+            "media": {
+              "markdown": "media/walkthrough/linters.md"
+            },
+            "completionEvents": [
+              "onCommand:openfiles.doctor",
+              "extensionInstalled:dbaeumer.vscode-eslint"
+            ]
+          },
+          {
+            "id": "prompt",
+            "title": "%walkthrough.prompt.title%",
+            "description": "%walkthrough.prompt.description%",
+            "media": {
+              "markdown": "media/walkthrough/prompt.md"
+            },
+            "completionEvents": [
+              "onCommand:openfiles.copyAgentPrompt"
+            ]
+          },
+          {
+            "id": "star",
+            "title": "%walkthrough.star.title%",
+            "description": "%walkthrough.star.description%",
+            "media": {
+              "markdown": "media/walkthrough/star.md"
+            },
+            "completionEvents": [
+              "onLink:https://github.com/devgiordane/openfiles"
+            ]
+          }
+        ]
+      }
+    ],
+    "configuration": {
+      "title": "OpenFiles",
+      "properties": {
+        "openfiles.mode": {
+          "type": "string",
+          "enum": [
+            "open",
+            "queue",
+            "notify"
+          ],
+          "enumDescriptions": [
+            "%config.mode.open%",
+            "%config.mode.queue%",
+            "%config.mode.notify%"
+          ],
+          "default": "open",
+          "markdownDescription": "%config.mode%"
+        },
+        "openfiles.openInBackground": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "%config.openInBackground%"
+        },
+        "openfiles.maxAutoOpen": {
+          "type": "number",
+          "default": 15,
+          "minimum": 0,
+          "markdownDescription": "%config.maxAutoOpen%"
+        },
+        "openfiles.closeReviewedTabs": {
+          "type": "boolean",
+          "default": false,
+          "markdownDescription": "%config.closeReviewedTabs%"
+        },
+        "openfiles.ignore": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [
+            "**/.git/**",
+            "**/.openfiles/**",
+            "**/node_modules/**",
+            "**/dist/**",
+            "**/build/**",
+            "**/out/**",
+            "**/coverage/**",
+            "**/.next/**",
+            "**/.dart_tool/**",
+            "**/target/**",
+            "**/bin/**",
+            "**/obj/**",
+            "**/__pycache__/**",
+            "**/.venv/**",
+            "**/*.log",
+            "**/package-lock.json",
+            "**/pnpm-lock.yaml",
+            "**/yarn.lock",
+            "**/bun.lock",
+            "**/Cargo.lock",
+            "**/poetry.lock",
+            "**/.claude/**",
+            "**/.codex/**",
+            "**/.gemini/**",
+            "**/.cursor/**"
+          ],
+          "markdownDescription": "%config.ignore%"
+        },
+        "openfiles.sensitive": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [
+            "**/.env",
+            "**/.env.*",
+            "**/*.pem",
+            "**/*.key",
+            "**/*.pfx",
+            "**/*.p12",
+            "**/credentials.*",
+            "**/secrets/**"
+          ],
+          "markdownDescription": "%config.sensitive%"
+        },
+        "openfiles.detection.watcher": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "%config.detection.watcher%"
+        },
+        "openfiles.detection.git": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "%config.detection.git%"
+        },
+        "openfiles.detection.hooks": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "%config.detection.hooks%"
+        },
+        "openfiles.detection.burstLimit": {
+          "type": "number",
+          "default": 200,
+          "minimum": 10,
+          "markdownDescription": "%config.detection.burstLimit%"
+        },
+        "openfiles.detection.editorSaveGraceMs": {
+          "type": "number",
+          "default": 1500,
+          "minimum": 200,
+          "markdownDescription": "%config.detection.editorSaveGraceMs%"
+        },
+        "openfiles.diagnostics.export": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "%config.diagnostics.export%"
+        },
+        "openfiles.hooks.feedback": {
+          "type": "string",
+          "enum": [
+            "errors",
+            "errorsAndWarnings",
+            "off"
+          ],
+          "default": "errorsAndWarnings",
+          "markdownDescription": "%config.hooks.feedback%"
+        },
+        "openfiles.hooks.feedbackTimeoutMs": {
+          "type": "number",
+          "default": 4000,
+          "minimum": 0,
+          "maximum": 20000,
+          "markdownDescription": "%config.hooks.feedbackTimeoutMs%"
+        },
+        "openfiles.statusBar.enabled": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "%config.statusBar.enabled%"
+        },
+        "openfiles.statusBar.items": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "edited",
+              "unreviewed",
+              "errors",
+              "warnings",
+              "agent",
+              "paused"
+            ]
+          },
+          "uniqueItems": true,
+          "default": [
+            "unreviewed",
+            "errors",
+            "warnings"
+          ],
+          "markdownDescription": "%config.statusBar.items%"
+        },
+        "openfiles.statusBar.clickAction": {
+          "type": "string",
+          "enum": [
+            "menu",
+            "reviewNext",
+            "openAiEdits",
+            "showProblems",
+            "focusSidebar"
+          ],
+          "default": "menu",
+          "markdownDescription": "%config.statusBar.clickAction%"
+        },
+        "openfiles.statusBar.alignment": {
+          "type": "string",
+          "enum": [
+            "left",
+            "right"
+          ],
+          "default": "left",
+          "markdownDescription": "%config.statusBar.alignment%"
+        },
+        "openfiles.configFile": {
+          "type": "string",
+          "default": ".openfiles.json",
+          "markdownDescription": "%config.configFile%"
+        },
+        "openfiles.heartbeatSeconds": {
+          "type": "number",
+          "default": 5,
+          "minimum": 2,
+          "maximum": 30,
+          "markdownDescription": "%config.heartbeatSeconds%"
+        }
+      }
+    },
+    "jsonValidation": [
+      {
+        "fileMatch": ".openfiles.json",
+        "url": "./resources/openfiles.schema.json"
+      }
+    ],
+    "colors": [
+      {
+        "id": "openfiles.unreviewedForeground",
+        "description": "%color.unreviewed%",
+        "defaults": {
+          "dark": "#e5a54b",
+          "light": "#b36b00",
+          "highContrast": "#ffb84d",
+          "highContrastLight": "#8a5300"
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run build -- --production",
+    "build": "node esbuild.mjs",
+    "watch": "node esbuild.mjs --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:integration": "npm run build && vscode-test",
+    "l10n:export": "npx @vscode/l10n-dev export --outDir ./l10n ./src",
+    "readme:tables": "node scripts/gen-readme-tables.mjs",
+    "package": "vsce package --readme-path README.marketplace.md",
+    "publish:marketplace": "vsce publish --readme-path README.marketplace.md",
+    "publish:openvsx": "ovsx publish --readme-path README.marketplace.md"
+  },
+  "dependencies": {
+    "jsonc-parser": "^3.3.1",
+    "picomatch": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.10.0",
+    "@types/picomatch": "^3.0.1",
+    "@types/vscode": "~1.93.0",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.4.1",
+    "@vscode/vsce": "^3.2.2",
+    "esbuild": "^0.25.0",
+    "ovsx": "^0.10.1",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "pricing": "Free",
+  "extensionKind": [
+    "workspace"
+  ]
+}

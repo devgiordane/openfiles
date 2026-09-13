@@ -1,0 +1,72 @@
+node_modules/
+dist/
+out/
+.vscode-test/
+*.vsix
+.openfiles/
+docs/node_modules/
+docs/dist/
+docs/.astro/
+# Build & generated artifacts
+dist/
+build/
+.next/
+coverage/
+*.min.js
+*.map
+*.log
+logs/
+.cache/
+# ==========================
+# SECRETS — never let an agent read these
+# ==========================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.pfx
+*credentials*.json
+*serviceaccount*.json
+.aws/
+.gcloud/
+.ssh/
+secrets/
+
+# ==========================
+# DEPENDENCIES & BUILD ARTIFACTS
+# ==========================
+node_modules/
+dist/
+build/
+.next/
+target/
+vendor/
+*.min.js
+*.map
+
+# ==========================
+# TEST & COVERAGE NOISE
+# ==========================
+coverage/
+test-results/
+playwright-report/
+*.log
+logs/
+
+# ==========================
+# EDITOR / OS CLUTTER
+# ==========================
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# ==========================
+# AI-SPECIFIC (mirror into .cursorignore too)
+# ==========================
+*.tfstate
+*.dump
+*.sqlite
+fixtures/large/

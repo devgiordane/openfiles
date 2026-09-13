@@ -1,0 +1,12 @@
+**
+!dist/extension.js
+!dist/hook.js
+!l10n/**
+!media/**
+!resources/**
+!templates/**
+!package.json
+!package.nls.json
+!package.nls.*.json
+!CHANGELOG.md
+!LICENSE
