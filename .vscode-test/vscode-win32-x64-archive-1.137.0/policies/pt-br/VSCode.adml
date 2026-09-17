@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources revision="1.0" schemaVersion="1.0">
+	<displayName />
+	<description />
+	<resources>
+		<stringTable>
+			<string id="Application">Visual Studio Code</string>
+			<string id="Supported_1_101">Visual Studio Code &gt;= 1.101</string>
+			<string id="Supported_1_104">Visual Studio Code &gt;= 1.104</string>
+			<string id="Supported_1_107">Visual Studio Code &gt;= 1.107</string>
+			<string id="Supported_1_109">Visual Studio Code &gt;= 1.109</string>
+			<string id="Supported_1_110">Visual Studio Code &gt;= 1.110</string>
+			<string id="Supported_1_113">Visual Studio Code &gt;= 1.113</string>
+			<string id="Supported_1_116">Visual Studio Code &gt;= 1.116</string>
+			<string id="Supported_1_118">Visual Studio Code &gt;= 1.118</string>
+			<string id="Supported_1_121">Visual Studio Code &gt;= 1.121</string>
+			<string id="Supported_1_122">Visual Studio Code &gt;= 1.122</string>
+			<string id="Supported_1_125">Visual Studio Code &gt;= 1.125</string>
+			<string id="Supported_1_126">Visual Studio Code &gt;= 1.126</string>
+			<string id="Supported_1_127">Visual Studio Code &gt;= 1.127</string>
+			<string id="Supported_1_130">Visual Studio Code &gt;= 1.130</string>
+			<string id="Supported_1_131">Visual Studio Code &gt;= 1.131</string>
+			<string id="Supported_1_132">Visual Studio Code &gt;= 1.132</string>
+			<string id="Supported_1_134">Visual Studio Code &gt;= 1.134</string>
+			<string id="Supported_1_136">Visual Studio Code &gt;= 1.136</string>
+			<string id="Supported_1_137">Visual Studio Code &gt;= 1.137</string>
+			<string id="Supported_1_67">Visual Studio Code &gt;= 1.67</string>
+			<string id="Supported_1_96">Visual Studio Code &gt;= 1.96</string>
+			<string id="Supported_1_99">Visual Studio Code &gt;= 1.99</string>
+			<string id="Category_interactiveSessionConfigurationTitle">Sessão Interativa</string>
+			<string id="Category_extensionsConfigurationTitle">Extensões</string>
+			<string id="Category_terminalIntegratedConfigurationTitle">Terminal Integrado</string>
+			<string id="Category_telemetryConfigurationTitle">Telemetria</string>
+			<string id="Category_updateConfigurationTitle">Atualizar</string>
+			<string id="AgentsVoice">AgentsVoice</string>
+			<string id="AgentsVoice_agents_voice_enabled">Ativar o painel Modo de Voz na exibição de chat para conversas de programação conduzidas por voz.</string>
+			<string id="BrowserChatTools">BrowserChatTools</string>
+			<string id="BrowserChatTools_browser_enableChatTools">Quando ativado, os agentes de chat podem usar as ferramentas do navegador para abrir e interagir com páginas no Navegador Integrado.</string>
+			<string id="ChatAgentAllowedNetworkDomains">ChatAgentAllowedNetworkDomains</string>
+			<string id="ChatAgentAllowedNetworkDomains_chat_agent_allowedNetworkDomains">Domínios permitidos para acessar a rede usando ferramentas de agente (ferramenta de busca, navegador integrado). Aplica-se quando {0} ou {1} estiverem habilitados. Quando {2} estiver habilitado, todos os domínios serão permitidos. Dá suporte a curingas como {3}. Quando as listas permitidas e negadas estiverem vazias, todos os domínios serão bloqueados. Domínios negados (confira {4}) têm precedência.</string>
+			<string id="ChatAgentDeniedNetworkDomains">ChatAgentDeniedNetworkDomains</string>
+			<string id="ChatAgentDeniedNetworkDomains_chat_agent_deniedNetworkDomains">Domínios cujo acesso à rede foi negado pelas ferramentas do agente (ferramenta de busca, navegador integrado). Aplica-se quando {0} ou {1} estiverem habilitados. Não se aplica quando {2} estiver habilitado. Tem precedência sobre {3}. Dá suporte a curingas como {4}.</string>
+			<string id="ChatAgentExtensionTools">ChatAgentExtensionTools</string>
+			<string id="ChatAgentExtensionTools_chat_extensionToolsEnabled">Habilitar o uso de ferramentas contribuídas por extensões de terceiros.</string>
+			<string id="ChatAgentHostCustomTerminalTool">ChatAgentHostCustomTerminalTool</string>
+			<string id="ChatAgentHostCustomTerminalTool_chat_agentHost_customTerminalTool_enabled_policy">Enable the Agent Host custom terminal tool override for Copilot SDK sessions.</string>
+			<string id="ChatAgentMode">ChatAgentMode</string>
+			<string id="ChatAgentMode_chat_agent_enabled_description">Quando ativado, o modo de agente pode ser ativado por meio do chat e ferramentas em contextos de agente, permitindo o uso de efeitos colaterais.</string>
+			<string id="ChatAgentNetworkFilter">ChatAgentNetworkFilter</string>
+			<string id="ChatAgentNetworkFilter_chat_agent_networkFilter">Quando habilitado, o acesso à rede por ferramentas de agente (ferramenta de busca, navegador integrado) é restrito de acordo com {0} e {1}. A filtragem de domínio também é aplicada a essas ferramentas quando {2} está habilitado.</string>
+			<string id="ChatAllowedMcpServers">ChatAllowedMcpServers</string>
+			<string id="ChatAllowedMcpServers_chat_mcp_allowedServers_policy">Allowlist of Model Context Protocol servers. When set, only servers matching an entry may be installed or run; omit entirely to allow all servers (subject to the deny list).</string>
+			<string id="ChatAllowManagedHooksOnly">ChatAllowManagedHooksOnly</string>
+			<string id="ChatAllowManagedHooksOnly_chat_hooks_allowManagedOnly_policy">Allows hooks only from enterprise-managed sources and plugins force-enabled by policy.</string>
+			<string id="ChatAllowManagedMcpServersOnly">ChatAllowManagedMcpServersOnly</string>
+			<string id="ChatAllowManagedMcpServersOnly_chat_mcp_allowManagedServersOnly_policy">Use only the enterprise-managed MCP allowlist when deciding which servers may run.</string>
+			<string id="ChatApprovedAccountOrganizations">ChatApprovedAccountOrganizations</string>
+			<string id="ChatApprovedAccountOrganizations_chat_approvedAccountOrganizations_policy_description">Definir esta política como uma lista não vazia ativa a proteção de Conta Aprovada: todos os recursos de IA ficam desativados até que você entre em uma conta do GitHub cujas organizações estejam nessa lista E os dados da política no nível da conta tenham sido resolvidos. A comparação não diferencia maiúsculas de minúsculas. Use "*" como curinga para aceitar qualquer conta conectada do GitHub ou GitHub Enterprise (use isso para implantações do GitHub Enterprise onde a lista de organizações não é exibida).</string>
+			<string id="ChatDefaultModel">ChatDefaultModel</string>
+			<string id="ChatDefaultModel_chat_defaultModel_policy">Define o modelo de chat padrão para novas conversas. Aceita "auto", um nome de família de modelo (como "opus" ou "gemini") ou uma ID de modelo completa. Os usuários ainda podem alternar o modelo dentro de uma conversa.</string>
+			<string id="ChatDeniedMcpServers">ChatDeniedMcpServers</string>
+			<string id="ChatDeniedMcpServers_chat_mcp_deniedServers_policy">Denylist of Model Context Protocol servers. Servers matching any entry are blocked from being installed or run, even if they also match the allow list; deny rules always take precedence.</string>
+			<string id="ChatEditorPreferCopilotHarness">ChatEditorPreferCopilotHarness</string>
+			<string id="ChatEditorPreferCopilotHarness_chat_editor_preferCopilotHarness_policy">Configure whether VS Code uses the Agent Host Copilot SDK instead of the local harness for new editor chat sessions.</string>
+			<string id="ChatEnabledPlugins">ChatEnabledPlugins</string>
+			<string id="ChatEnabledPlugins_chat_plugins_enabledPlugins_policy">Habilitação de plug-in. As chaves são IDs de plug-in no formato `{plugin}@{marketplace}`; os valores habilitam ou desabilitam o plug-in.</string>
+			<string id="ChatExtraMarketplaces">ChatExtraMarketplaces</string>
+			<string id="ChatExtraMarketplaces_chat_plugins_extraMarketplaces_policy">Additional plugin marketplaces to query. Keys are marketplace names; values are GitHub shorthand (`owner/repo[#ref]`) or Git URIs (`{url}[#ref]`), optionally with an enterprise-managed auto-update override.</string>
+			<string id="ChatHooks">ChatHooks</string>
+			<string id="ChatHooks_chat_useHooks_description">Controls whether chat hooks are executed at strategic points during an agent's workflow. Hooks are loaded from the files configured in `#chat.hookFilesLocations#`. This setting is only used by the Local agent harness.</string>
+			<string id="ChatMCP">ChatMCP</string>
+			<string id="ChatMCP_chat_mcp_access">Controla o acesso aos servidores do Protocolo de Contexto de Modelo.</string>
+			<string id="ChatMCP_chat_mcp_access_none">Sem acesso aos servidores MCP.</string>
+			<string id="ChatMCP_chat_mcp_access_registry">Allows access to MCP servers listed in the registry that VS Code is connected to.</string>
+			<string id="ChatMCP_chat_mcp_access_any">Permitir o acesso a qualquer servidor MCP instalado.</string>
+			<string id="ChatPluginsEnabled">ChatPluginsEnabled</string>
+			<string id="ChatPluginsEnabled_chat_plugins_enabled">Habilitar a integração do plug-in do agente no chat.</string>
+			<string id="ChatStrictMarketplaces">ChatStrictMarketplaces</string>
+			<string id="ChatStrictMarketplaces_chat_plugins_strictMarketplaces_policy">Lista de permissões das fontes do marketplace de plug-ins. Quando definida, apenas marketplaces que correspondem a uma entrada são confiáveis; uma matriz vazia bloqueia todos os marketplaces.</string>
+			<string id="ChatStrictPluginOnlyCustomization">ChatStrictPluginOnlyCustomization</string>
+			<string id="ChatStrictPluginOnlyCustomization_chat_customizations_strictPluginOnlyCustomization_policy">Blocks standalone user and workspace skills, agents, hooks, instructions, and MCP servers while keeping eligible plugin customizations available.</string>
+			<string id="ChatToolsAutoApprove">ChatToolsAutoApprove</string>
+			<string id="ChatToolsAutoApprove_autoApprove3_description">A aprovação automática global, também conhecida como "modo YOLO", desabilita completamente a aprovação manual para todas as ferramentas em todos os workspaces, permitindo que o agente aja de forma totalmente autônoma. Isso é extremamente perigoso e *nunca* é recomendado, mesmo os ambientes conteinerizados como Codespaces e Contêineres de Desenvolvimento têm chaves de usuário encaminhadas para o contêiner que podem ser comprometidas.
+
+Esse recurso desabilita as proteções de segurança críticas e facilita muito a invasão do computador.
+
+Observação: essa configuração controla apenas a aprovação da ferramenta e não impede que o agente faça perguntas. Para responder automaticamente às perguntas do agente, use a configuração `#chat.autoReply#`.</string>
+			<string id="ChatToolsEligibleForAutoApproval">ChatToolsEligibleForAutoApproval</string>
+			<string id="ChatToolsEligibleForAutoApproval_chat_tools_eligibleForAutoApproval">Controla quais ferramentas estão qualificadas para aprovação automática. As ferramentas definidas como "false" sempre apresentarão uma confirmação e nunca oferecerão a opção de aprovação automática. O comportamento padrão (ou definir uma ferramenta como "true") pode resultar na ferramenta oferecer opções de aprovação automática.</string>
+			<string id="Claude3PIntegration">Claude3PIntegration</string>
+			<string id="Claude3PIntegration_chat_agentHost_claudeAgent_enabled_policy">Habilite as sessões do Agente Claude no VS Code. Comece e retome as sessões de codificação da plataforma do SDK do Agente Claude da Anthropic diretamente no editor. Use sua assinatura atual do Copilot.</string>
+			<string id="Codex3PIntegration">Codex3PIntegration</string>
+			<string id="Codex3PIntegration_chat_agentHost_codexAgent_enabled_policy">Enable Codex Agent sessions in VS Code. Start and resume agentic coding sessions powered by OpenAI Codex. Usage can be routed through GitHub Copilot or authenticated directly with an OpenAI account.</string>
+			<string id="CopilotNextEditSuggestions">CopilotNextEditSuggestions</string>
+			<string id="CopilotNextEditSuggestions_github_copilot_nextEditSuggestions_enabled">Whether to enable next edit suggestions (NES). NES can propose a next edit based on your recent changes.</string>
+			<string id="CopilotOtelCaptureContent">CopilotOtelCaptureContent</string>
+			<string id="CopilotOtelCaptureContent_chat_agentHost_otel_captureContent_policy">Controla se a exportação do OpenTelemetry do Copilot captura o conteúdo da solicitação, da resposta e da ferramenta.</string>
+			<string id="CopilotOtelEnabled">CopilotOtelEnabled</string>
+			<string id="CopilotOtelEnabled_chat_agentHost_otel_enabled_policy">Controla se a exportação do OpenTelemetry do Copilot está habilitada. Quando gerenciado, os usuários não podem substituir o valor da empresa.</string>
+			<string id="CopilotOtelEndpoint">CopilotOtelEndpoint</string>
+			<string id="CopilotOtelEndpoint_chat_agentHost_otel_otlpEndpoint_policy">Controla o ponto de extremidade do coletor OTLP gerenciado pela empresa para exportação do OpenTelemetry do Copilot.</string>
+			<string id="CopilotOtelHeaders">CopilotOtelHeaders</string>
+			<string id="CopilotOtelHeaders_chat_agentHost_otel_headers_policy">Controla os cabeçalhos do exportador OTLP gerenciados pela empresa para exportação do OpenTelemetry do Copilot.</string>
+			<string id="CopilotOtelOtlpProtocol">CopilotOtelOtlpProtocol</string>
+			<string id="CopilotOtelOtlpProtocol_chat_agentHost_otel_otlpProtocol_policy">Controla o protocolo de transmissão OTLP gerenciado pela empresa (protobuf vs JSON) para exportação do OpenTelemetry do Copilot.</string>
+			<string id="CopilotOtelOutfile">CopilotOtelOutfile</string>
+			<string id="CopilotOtelOutfile_chat_agentHost_otel_outfile_policy">Impede a exportação de arquivos locais quando a exportação do OpenTelemetry do Copilot gerenciada pela empresa está configurada.</string>
+			<string id="CopilotOtelProtocol">CopilotOtelProtocol</string>
+			<string id="CopilotOtelProtocol_chat_agentHost_otel_protocol_policy">Controla o protocolo OTLP gerenciado pela empresa para exportação do OpenTelemetry do Copilot.</string>
+			<string id="CopilotOtelProtocol_chat_agentHost_otel_protocol_policy_otlpHttp">Use OTLP via HTTP.</string>
+			<string id="CopilotOtelProtocol_chat_agentHost_otel_protocol_policy_otlpGrpc">Use OTLP via gRPC.</string>
+			<string id="CopilotOtelProtocol_chat_agentHost_otel_protocol_policy_console">O exportador do console não está selecionado pelas configurações gerenciadas pela empresa.</string>
+			<string id="CopilotOtelProtocol_chat_agentHost_otel_protocol_policy_file">O exportador de arquivos não está selecionado pelas configurações gerenciadas pela empresa.</string>
+			<string id="CopilotOtelResourceAttributes">CopilotOtelResourceAttributes</string>
+			<string id="CopilotOtelResourceAttributes_chat_agentHost_otel_resourceAttributes_policy">Controla os atributos de recurso do OTel gerenciado pela empresa para exportação do OpenTelemetry do Copilot.</string>
+			<string id="CopilotOtelServiceName">CopilotOtelServiceName</string>
+			<string id="CopilotOtelServiceName_chat_agentHost_otel_serviceName_policy">Controla o atributo de recurso `service.name` do OTel gerenciado pela empresa para exportação do OpenTelemetry do Copilot.</string>
+			<string id="CopilotReviewAgent">CopilotReviewAgent</string>
+			<string id="CopilotReviewAgent_github_copilot_chat_reviewAgent_enabled">Enables the code review agent.</string>
+			<string id="CopilotReviewSelection">CopilotReviewSelection</string>
+			<string id="CopilotReviewSelection_github_copilot_chat_reviewSelection_enabled">Enables code review on current selection.</string>
+			<string id="CopilotSessionSync">CopilotSessionSync</string>
+			<string id="CopilotSessionSync_chat_sessionSync_enabled_policy">Habilite a sincronização de sessão para GitHub.com para o histórico de sessões do Copilot entre dispositivos. Quando desabilitados pela política da organização, os dados da sessão são mantidos somente localmente.</string>
+			<string id="DictationEnabled">DictationEnabled</string>
+			<string id="DictationEnabled_dictation_enabled_policy">Controls whether dictation is available across the product (chat input, editor, and terminal).</string>
+			<string id="DictationLLMCleanup">DictationLLMCleanup</string>
+			<string id="DictationLLMCleanup_dictation_experimental_llmCleanup_policy">Controls whether final dictation transcripts are sent to a language model for cleanup.</string>
+			<string id="DictationModel">DictationModel</string>
+			<string id="DictationModel_dictation_model_policy">Controls the transcription model used for dictation.</string>
+			<string id="DictationModel_dictation_model_nemotronMultilingual_policy">Use the on-device transcription model. Audio does not leave the device.</string>
+			<string id="DictationModel_dictation_model_mai_policy">Use the cloud transcription service. Audio is streamed to the service.</string>
+			<string id="McpEnterpriseManagedAuthIdp">McpEnterpriseManagedAuthIdp</string>
+			<string id="McpEnterpriseManagedAuthIdp_mcp_enterpriseManagedAuth_idp_policy">A configuração de IdP de OAuth/OIDC usada para autenticação do servidor MCP (Protocolo de Contexto do Modelo) gerenciado pela empresa.</string>
+			<string id="McpGalleryServiceUrl">McpGalleryServiceUrl</string>
+			<string id="McpGalleryServiceUrl_mcp_gallery_serviceUrl">Configurar URL de serviço da galeria do MCP para se conectar a</string>
+			<string id="AllowedExtensions">AllowedExtensions</string>
+			<string id="AllowedExtensions_extensions_allowed_policy">Especifique uma lista de extensões que têm permissão para ser usadas. Isso ajuda a manter um ambiente de desenvolvimento seguro e consistente ao restringir o uso de extensões não autorizadas. Mais informações: https://aka.ms/vscode/enterprise/extensions/allowed</string>
+			<string id="ExtensionGalleryAuthProvider">ExtensionGalleryAuthProvider</string>
+			<string id="ExtensionGalleryAuthProvider_extensions_gallery_authProvider">Configure the authentication provider for the Extensions Marketplace</string>
+			<string id="ExtensionGalleryAuthProvider_extensions_gallery_authProvider_github">Authenticate to the Extensions Marketplace using GitHub.</string>
+			<string id="ExtensionGalleryAuthProvider_extensions_gallery_authProvider_microsoft">Authenticate to the Extensions Marketplace using a Microsoft (Entra ID) account.</string>
+			<string id="ExtensionGalleryServiceUrl">ExtensionGalleryServiceUrl</string>
+			<string id="ExtensionGalleryServiceUrl_extensions_gallery_serviceUrl">Configurar a URL do serviço do Marketplace ao qual se conectar</string>
+			<string id="ExtensionsAutoUpdate">ExtensionsAutoUpdate</string>
+			<string id="ExtensionsAutoUpdate_extensions_autoUpdate">Controla o comportamento de atualização automática das extensões. As atualizações são buscadas em um serviço online Microsoft.</string>
+			<string id="ExtensionsAutoUpdate_extensions_autoUpdate_on">Baixar e instalar as atualizações automaticamente somente para as extensões habilitadas.</string>
+			<string id="ExtensionsAutoUpdate_extensions_autoUpdate_off">As extensões não são atualizadas automaticamente.</string>
+			<string id="ExtensionsAutoUpdateDelay">ExtensionsAutoUpdateDelay</string>
+			<string id="ExtensionsAutoUpdateDelay_extensions_autoUpdateDelay">Controla o atraso em horas após uma atualização de extensão ser publicada antes de ser instalada automaticamente. Aplica-se somente quando `#extensions.autoUpdate#` está definido como `on`. Esse atraso ajuda a evitar a instalação de atualizações potencialmente problemáticas imediatamente após o lançamento.</string>
+			<string id="ChatAgentSandboxAllowAutoApprove">ChatAgentSandboxAllowAutoApprove</string>
+			<string id="ChatAgentSandboxAllowAutoApprove_agentSandbox_allowAutoApprove">Controla se os comandos de terminal do modo de agente executados dentro da área restrita são aprovados automaticamente. Quando desabilitada, a ferramenta de execução no terminal usa o fluxo de aprovação existente. Isso se aplica somente quando {0} está habilitado.</string>
+			<string id="ChatAgentSandboxAllowNetwork">ChatAgentSandboxAllowNetwork</string>
+			<string id="ChatAgentSandboxAllowNetwork_agentSandbox_allowNetwork">Quando {0} está habilitada, ela controla se todos os domínios de rede poderão ser permitidos na área restrita. Quando habilitada, a área restrita preserva as restrições do sistema de arquivos enquanto flexibiliza todas as restrições de rede.</string>
+			<string id="ChatAgentSandboxAllowUnsandboxedCommands">ChatAgentSandboxAllowUnsandboxedCommands</string>
+			<string id="ChatAgentSandboxAllowUnsandboxedCommands_agentSandbox_allowUnsandboxedCommands">Controla se os comandos de terminal do modo de agente podem ser executados fora da área restrita após a confirmação do usuário quando um comando em área restrita falha ou quando as restrições da área restrita bloqueiam o comando. Isso se aplica somente quando {0} está habilitado.</string>
+			<string id="ChatAgentSandboxEnabled">ChatAgentSandboxEnabled</string>
+			<string id="ChatAgentSandboxEnabled_agentSandbox_enabledSetting">Controla se o modo de agente usa área restrita para restringir o que as ferramentas podem fazer. Quando habilitadas, as ferramentas como o terminal são executadas em um ambiente em área restrita para limitar o acesso ao sistema. Use {0} para permitir todos os domínios de rede.</string>
+			<string id="ChatAgentSandboxEnabled_agentSandbox_enabledSetting_offDescription">Desabilite a área restrita para ferramentas de modo de agente.</string>
+			<string id="ChatAgentSandboxEnabled_agentSandbox_enabledSetting_onDescription">Habilite a área restrita para ferramentas de modo de agente.</string>
+			<string id="ChatToolsTerminalEnableAutoApprove">ChatToolsTerminalEnableAutoApprove</string>
+			<string id="ChatToolsTerminalEnableAutoApprove_autoApproveMode_description">Controla se será permitido ou não a aprovação automática na ferramenta de execução em terminal.</string>
+			<string id="EnableFeedback">EnableFeedback</string>
+			<string id="EnableFeedback_telemetry_feedback_enabled">Habilite mecanismos de comentários, como o relatório de problemas, pesquisas e outras opções de comentários.</string>
+			<string id="TelemetryLevel">TelemetryLevel</string>
+			<string id="TelemetryLevel_telemetry_telemetryLevel_policyDescription">Controla o nível de telemetria.</string>
+			<string id="TelemetryLevel_telemetry_telemetryLevel_default">Envia dados de uso, erros e relatórios de falhas.</string>
+			<string id="TelemetryLevel_telemetry_telemetryLevel_error">Envia relatórios gerais de telemetria e falhas de erros.</string>
+			<string id="TelemetryLevel_telemetry_telemetryLevel_crash">Envia relatórios de falhas no nível do sistema operacional.</string>
+			<string id="TelemetryLevel_telemetry_telemetryLevel_off">Desabilita toda a telemetria do produto.</string>
+			<string id="UpdateMode">UpdateMode</string>
+			<string id="UpdateMode_updateMode">Configure o recebimento de atualizações automáticas. As atualizações são obtidas de um serviço online da Microsoft.</string>
+			<string id="UpdateMode_none">Nenhum</string>
+			<string id="UpdateMode_manual">Desabilitar as verificações automáticas de atualização em segundo plano. As atualizações estarão disponíveis se você verificar as atualizações manualmente.</string>
+			<string id="UpdateMode_start">Iniciar</string>
+			<string id="UpdateMode_default">Sistema</string>
+		</stringTable>
+		<presentationTable>
+			<presentation id="AgentsVoice"><checkBox refId="AgentsVoice">AgentsVoice</checkBox></presentation>
+			<presentation id="BrowserChatTools"><checkBox refId="BrowserChatTools">BrowserChatTools</checkBox></presentation>
+			<presentation id="ChatAgentAllowedNetworkDomains"><multiTextBox refId="ChatAgentAllowedNetworkDomains" /></presentation>
+			<presentation id="ChatAgentDeniedNetworkDomains"><multiTextBox refId="ChatAgentDeniedNetworkDomains" /></presentation>
+			<presentation id="ChatAgentExtensionTools"><checkBox refId="ChatAgentExtensionTools">ChatAgentExtensionTools</checkBox></presentation>
+			<presentation id="ChatAgentHostCustomTerminalTool"><checkBox refId="ChatAgentHostCustomTerminalTool">ChatAgentHostCustomTerminalTool</checkBox></presentation>
+			<presentation id="ChatAgentMode"><checkBox refId="ChatAgentMode">ChatAgentMode</checkBox></presentation>
+			<presentation id="ChatAgentNetworkFilter"><checkBox refId="ChatAgentNetworkFilter">ChatAgentNetworkFilter</checkBox></presentation>
+			<presentation id="ChatAllowedMcpServers"><multiTextBox refId="ChatAllowedMcpServers" /></presentation>
+			<presentation id="ChatAllowManagedHooksOnly"><checkBox refId="ChatAllowManagedHooksOnly">ChatAllowManagedHooksOnly</checkBox></presentation>
+			<presentation id="ChatAllowManagedMcpServersOnly"><checkBox refId="ChatAllowManagedMcpServersOnly">ChatAllowManagedMcpServersOnly</checkBox></presentation>
+			<presentation id="ChatApprovedAccountOrganizations"><multiTextBox refId="ChatApprovedAccountOrganizations" /></presentation>
+			<presentation id="ChatDefaultModel"><textBox refId="ChatDefaultModel"><label>ChatDefaultModel:</label></textBox></presentation>
+			<presentation id="ChatDeniedMcpServers"><multiTextBox refId="ChatDeniedMcpServers" /></presentation>
+			<presentation id="ChatEditorPreferCopilotHarness"><checkBox refId="ChatEditorPreferCopilotHarness">ChatEditorPreferCopilotHarness</checkBox></presentation>
+			<presentation id="ChatEnabledPlugins"><multiTextBox refId="ChatEnabledPlugins" /></presentation>
+			<presentation id="ChatExtraMarketplaces"><multiTextBox refId="ChatExtraMarketplaces" /></presentation>
+			<presentation id="ChatHooks"><checkBox refId="ChatHooks">ChatHooks</checkBox></presentation>
+			<presentation id="ChatMCP"><dropdownList refId="ChatMCP" /></presentation>
+			<presentation id="ChatPluginsEnabled"><checkBox refId="ChatPluginsEnabled">ChatPluginsEnabled</checkBox></presentation>
+			<presentation id="ChatStrictMarketplaces"><multiTextBox refId="ChatStrictMarketplaces" /></presentation>
+			<presentation id="ChatStrictPluginOnlyCustomization"><checkBox refId="ChatStrictPluginOnlyCustomization">ChatStrictPluginOnlyCustomization</checkBox></presentation>
+			<presentation id="ChatToolsAutoApprove"><checkBox refId="ChatToolsAutoApprove">ChatToolsAutoApprove</checkBox></presentation>
+			<presentation id="ChatToolsEligibleForAutoApproval"><multiTextBox refId="ChatToolsEligibleForAutoApproval" /></presentation>
+			<presentation id="Claude3PIntegration"><checkBox refId="Claude3PIntegration">Claude3PIntegration</checkBox></presentation>
+			<presentation id="Codex3PIntegration"><checkBox refId="Codex3PIntegration">Codex3PIntegration</checkBox></presentation>
+			<presentation id="CopilotNextEditSuggestions"><checkBox refId="CopilotNextEditSuggestions">CopilotNextEditSuggestions</checkBox></presentation>
+			<presentation id="CopilotOtelCaptureContent"><checkBox refId="CopilotOtelCaptureContent">CopilotOtelCaptureContent</checkBox></presentation>
+			<presentation id="CopilotOtelEnabled"><checkBox refId="CopilotOtelEnabled">CopilotOtelEnabled</checkBox></presentation>
+			<presentation id="CopilotOtelEndpoint"><textBox refId="CopilotOtelEndpoint"><label>CopilotOtelEndpoint:</label></textBox></presentation>
+			<presentation id="CopilotOtelHeaders"><multiTextBox refId="CopilotOtelHeaders" /></presentation>
+			<presentation id="CopilotOtelOtlpProtocol"><textBox refId="CopilotOtelOtlpProtocol"><label>CopilotOtelOtlpProtocol:</label></textBox></presentation>
+			<presentation id="CopilotOtelOutfile"><textBox refId="CopilotOtelOutfile"><label>CopilotOtelOutfile:</label></textBox></presentation>
+			<presentation id="CopilotOtelProtocol"><dropdownList refId="CopilotOtelProtocol" /></presentation>
+			<presentation id="CopilotOtelResourceAttributes"><multiTextBox refId="CopilotOtelResourceAttributes" /></presentation>
+			<presentation id="CopilotOtelServiceName"><textBox refId="CopilotOtelServiceName"><label>CopilotOtelServiceName:</label></textBox></presentation>
+			<presentation id="CopilotReviewAgent"><checkBox refId="CopilotReviewAgent">CopilotReviewAgent</checkBox></presentation>
+			<presentation id="CopilotReviewSelection"><checkBox refId="CopilotReviewSelection">CopilotReviewSelection</checkBox></presentation>
+			<presentation id="CopilotSessionSync"><checkBox refId="CopilotSessionSync">CopilotSessionSync</checkBox></presentation>
+			<presentation id="DictationEnabled"><checkBox refId="DictationEnabled">DictationEnabled</checkBox></presentation>
+			<presentation id="DictationLLMCleanup"><checkBox refId="DictationLLMCleanup">DictationLLMCleanup</checkBox></presentation>
+			<presentation id="DictationModel"><dropdownList refId="DictationModel" /></presentation>
+			<presentation id="McpEnterpriseManagedAuthIdp"><multiTextBox refId="McpEnterpriseManagedAuthIdp" /></presentation>
+			<presentation id="McpGalleryServiceUrl"><textBox refId="McpGalleryServiceUrl"><label>McpGalleryServiceUrl:</label></textBox></presentation>
+			<presentation id="AllowedExtensions"><multiTextBox refId="AllowedExtensions" /></presentation>
+			<presentation id="ExtensionGalleryAuthProvider"><dropdownList refId="ExtensionGalleryAuthProvider" /></presentation>
+			<presentation id="ExtensionGalleryServiceUrl"><textBox refId="ExtensionGalleryServiceUrl"><label>ExtensionGalleryServiceUrl:</label></textBox></presentation>
+			<presentation id="ExtensionsAutoUpdate"><dropdownList refId="ExtensionsAutoUpdate" /></presentation>
+			<presentation id="ExtensionsAutoUpdateDelay"><decimalTextBox refId="ExtensionsAutoUpdateDelay" defaultValue="12">ExtensionsAutoUpdateDelay</decimalTextBox></presentation>
+			<presentation id="ChatAgentSandboxAllowAutoApprove"><checkBox refId="ChatAgentSandboxAllowAutoApprove">ChatAgentSandboxAllowAutoApprove</checkBox></presentation>
+			<presentation id="ChatAgentSandboxAllowNetwork"><checkBox refId="ChatAgentSandboxAllowNetwork">ChatAgentSandboxAllowNetwork</checkBox></presentation>
+			<presentation id="ChatAgentSandboxAllowUnsandboxedCommands"><checkBox refId="ChatAgentSandboxAllowUnsandboxedCommands">ChatAgentSandboxAllowUnsandboxedCommands</checkBox></presentation>
+			<presentation id="ChatAgentSandboxEnabled"><dropdownList refId="ChatAgentSandboxEnabled" /></presentation>
+			<presentation id="ChatToolsTerminalEnableAutoApprove"><checkBox refId="ChatToolsTerminalEnableAutoApprove">ChatToolsTerminalEnableAutoApprove</checkBox></presentation>
+			<presentation id="EnableFeedback"><checkBox refId="EnableFeedback">EnableFeedback</checkBox></presentation>
+			<presentation id="TelemetryLevel"><dropdownList refId="TelemetryLevel" /></presentation>
+			<presentation id="UpdateMode"><dropdownList refId="UpdateMode" /></presentation>
+		</presentationTable>
+	</resources>
+</policyDefinitionResources>

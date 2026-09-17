@@ -1,72 +1,26 @@
+# Backup snapshot - only environments/regenerated caches and files >100MB excluded
 node_modules/
-dist/
-out/
-.vscode-test/
-*.vsix
-.openfiles/
-docs/node_modules/
-docs/dist/
-docs/.astro/
-# Build & generated artifacts
-dist/
-build/
-.next/
-coverage/
-*.min.js
-*.map
-*.log
-logs/
-.cache/
-# ==========================
-# SECRETS — never let an agent read these
-# ==========================
-.env
-.env.*
-!.env.example
-*.pem
-*.key
-*.crt
-*.pfx
-*credentials*.json
-*serviceaccount*.json
-.aws/
-.gcloud/
-.ssh/
-secrets/
-
-# ==========================
-# DEPENDENCIES & BUILD ARTIFACTS
-# ==========================
-node_modules/
-dist/
-build/
-.next/
-target/
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.tox/
 vendor/
-*.min.js
-*.map
-
-# ==========================
-# TEST & COVERAGE NOISE
-# ==========================
-coverage/
-test-results/
-playwright-report/
-*.log
-logs/
-
-# ==========================
-# EDITOR / OS CLUTTER
-# ==========================
-.DS_Store
-.idea/
-.vscode/
-*.swp
-
-# ==========================
-# AI-SPECIFIC (mirror into .cursorignore too)
-# ==========================
-*.tfstate
-*.dump
-*.sqlite
-fixtures/large/
+target/
+.gradle/
+.next/
+.nuxt/
+.turbo/
+dist/
+build/
+Library/
+Temp/
+Logs/
+obj/
+.vs/
+UserSettings/
+/.vscode-test/vscode-win32-x64-archive-1.137.0/Code.exe

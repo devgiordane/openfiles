@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources revision="1.0" schemaVersion="1.0">
+	<displayName />
+	<description />
+	<resources>
+		<stringTable>
+			<string id="Application">Visual Studio Code</string>
+			<string id="Supported_1_101">Visual Studio Code &gt;= 1.101</string>
+			<string id="Supported_1_104">Visual Studio Code &gt;= 1.104</string>
+			<string id="Supported_1_107">Visual Studio Code &gt;= 1.107</string>
+			<string id="Supported_1_109">Visual Studio Code &gt;= 1.109</string>
+			<string id="Supported_1_110">Visual Studio Code &gt;= 1.110</string>
+			<string id="Supported_1_113">Visual Studio Code &gt;= 1.113</string>
+			<string id="Supported_1_116">Visual Studio Code &gt;= 1.116</string>
+			<string id="Supported_1_118">Visual Studio Code &gt;= 1.118</string>
+			<string id="Supported_1_121">Visual Studio Code &gt;= 1.121</string>
+			<string id="Supported_1_122">Visual Studio Code &gt;= 1.122</string>
+			<string id="Supported_1_125">Visual Studio Code &gt;= 1.125</string>
+			<string id="Supported_1_126">Visual Studio Code &gt;= 1.126</string>
+			<string id="Supported_1_127">Visual Studio Code &gt;= 1.127</string>
+			<string id="Supported_1_130">Visual Studio Code &gt;= 1.130</string>
+			<string id="Supported_1_131">Visual Studio Code &gt;= 1.131</string>
+			<string id="Supported_1_132">Visual Studio Code &gt;= 1.132</string>
+			<string id="Supported_1_134">Visual Studio Code &gt;= 1.134</string>
+			<string id="Supported_1_136">Visual Studio Code &gt;= 1.136</string>
+			<string id="Supported_1_137">Visual Studio Code &gt;= 1.137</string>
+			<string id="Supported_1_67">Visual Studio Code &gt;= 1.67</string>
+			<string id="Supported_1_96">Visual Studio Code &gt;= 1.96</string>
+			<string id="Supported_1_99">Visual Studio Code &gt;= 1.99</string>
+			<string id="Category_interactiveSessionConfigurationTitle">互動式工作階段</string>
+			<string id="Category_extensionsConfigurationTitle">延伸模組</string>
+			<string id="Category_terminalIntegratedConfigurationTitle">整合式終端</string>
+			<string id="Category_telemetryConfigurationTitle">遙測</string>
+			<string id="Category_updateConfigurationTitle">更新</string>
+			<string id="AgentsVoice">AgentsVoice</string>
+			<string id="AgentsVoice_agents_voice_enabled">針對語音驅動的編碼交談，在聊天檢視中啟用 [語音模式] 面板。</string>
+			<string id="BrowserChatTools">BrowserChatTools</string>
+			<string id="BrowserChatTools_browser_enableChatTools">啟用後，聊天代理程式可使用瀏覽器工具開啟整合瀏覽器中的頁面並與其互動。</string>
+			<string id="ChatAgentAllowedNetworkDomains">ChatAgentAllowedNetworkDomains</string>
+			<string id="ChatAgentAllowedNetworkDomains_chat_agent_allowedNetworkDomains">允許 Agent 工具 (擷取工具、整合式瀏覽器) 進行網路存取的網域。在啟用 {0} 或 {1} 時套用。當 {2} 啟用時，允許所有網域。支援萬用字元，例如 {3}。當允許和拒絕的清單都是空白時，即會封鎖所有網域。拒絕的網域 (請參閱 {4}) 會優先。</string>
+			<string id="ChatAgentDeniedNetworkDomains">ChatAgentDeniedNetworkDomains</string>
+			<string id="ChatAgentDeniedNetworkDomains_chat_agent_deniedNetworkDomains">已禁止 Agent 工具 (擷取工具、整合式瀏覽器) 進行網路存取的網域。在啟用 {0} 或 {1} 時套用。在啟用 {2} 時不會套用。優先於 {3}。支援萬用字元，例如 {4}。</string>
+			<string id="ChatAgentExtensionTools">ChatAgentExtensionTools</string>
+			<string id="ChatAgentExtensionTools_chat_extensionToolsEnabled">啟用使用第三方延伸模組所提供的工具。</string>
+			<string id="ChatAgentHostCustomTerminalTool">ChatAgentHostCustomTerminalTool</string>
+			<string id="ChatAgentHostCustomTerminalTool_chat_agentHost_customTerminalTool_enabled_policy">Enable the Agent Host custom terminal tool override for Copilot SDK sessions.</string>
+			<string id="ChatAgentMode">ChatAgentMode</string>
+			<string id="ChatAgentMode_chat_agent_enabled_description">啟用時，可以從聊天啟動 Agent 模式，而且可以使用 Agent 內容中具有副作用的工具。</string>
+			<string id="ChatAgentNetworkFilter">ChatAgentNetworkFilter</string>
+			<string id="ChatAgentNetworkFilter_chat_agent_networkFilter">啟用時，Agent 工具 (取得工具、整合瀏覽器) 的網路存取會根據 {0} 和 {1} 加以限制。啟用 {2} 時，也會將網域篩選套用至這些工具。</string>
+			<string id="ChatAllowedMcpServers">ChatAllowedMcpServers</string>
+			<string id="ChatAllowedMcpServers_chat_mcp_allowedServers_policy">Allowlist of Model Context Protocol servers. When set, only servers matching an entry may be installed or run; omit entirely to allow all servers (subject to the deny list).</string>
+			<string id="ChatAllowManagedHooksOnly">ChatAllowManagedHooksOnly</string>
+			<string id="ChatAllowManagedHooksOnly_chat_hooks_allowManagedOnly_policy">Allows hooks only from enterprise-managed sources and plugins force-enabled by policy.</string>
+			<string id="ChatAllowManagedMcpServersOnly">ChatAllowManagedMcpServersOnly</string>
+			<string id="ChatAllowManagedMcpServersOnly_chat_mcp_allowManagedServersOnly_policy">Use only the enterprise-managed MCP allowlist when deciding which servers may run.</string>
+			<string id="ChatApprovedAccountOrganizations">ChatApprovedAccountOrganizations</string>
+			<string id="ChatApprovedAccountOrganizations_chat_approvedAccountOrganizations_policy_description">將此原則設定為非空清單時，會啟用核准帳戶閘道：所有 AI 功能將停用，直到使用者登入組織與此清單有交集的 GitHub 帳戶，且帳戶端原則資料已解析完成。比較時不區分大小寫。使用 '*' 作為萬用字元，以接受任何已登入的 GitHub 或 GHE 帳戶 (在組織清單未顯示的地方，用它來進行 GHE 部署)。</string>
+			<string id="ChatDefaultModel">ChatDefaultModel</string>
+			<string id="ChatDefaultModel_chat_defaultModel_policy">設定新交談的預設聊天模型。接受 "auto"、模型系列名稱 (例如 "opus" 或 "gemini")，或完整的模型識別碼。使用者仍可在交談中切換模型。</string>
+			<string id="ChatDeniedMcpServers">ChatDeniedMcpServers</string>
+			<string id="ChatDeniedMcpServers_chat_mcp_deniedServers_policy">Denylist of Model Context Protocol servers. Servers matching any entry are blocked from being installed or run, even if they also match the allow list; deny rules always take precedence.</string>
+			<string id="ChatEditorPreferCopilotHarness">ChatEditorPreferCopilotHarness</string>
+			<string id="ChatEditorPreferCopilotHarness_chat_editor_preferCopilotHarness_policy">Configure whether VS Code uses the Agent Host Copilot SDK instead of the local harness for new editor chat sessions.</string>
+			<string id="ChatEnabledPlugins">ChatEnabledPlugins</string>
+			<string id="ChatEnabledPlugins_chat_plugins_enabledPlugins_policy">外掛程式啟用。索引鍵是 `{plugin}@{marketplace}` 格式的外掛程式識別碼; 值會啟用或停用外掛程式。</string>
+			<string id="ChatExtraMarketplaces">ChatExtraMarketplaces</string>
+			<string id="ChatExtraMarketplaces_chat_plugins_extraMarketplaces_policy">Additional plugin marketplaces to query. Keys are marketplace names; values are GitHub shorthand (`owner/repo[#ref]`) or Git URIs (`{url}[#ref]`), optionally with an enterprise-managed auto-update override.</string>
+			<string id="ChatHooks">ChatHooks</string>
+			<string id="ChatHooks_chat_useHooks_description">Controls whether chat hooks are executed at strategic points during an agent's workflow. Hooks are loaded from the files configured in `#chat.hookFilesLocations#`. This setting is only used by the Local agent harness.</string>
+			<string id="ChatMCP">ChatMCP</string>
+			<string id="ChatMCP_chat_mcp_access">控制對安裝的模型內容通訊協定伺服器的存取。</string>
+			<string id="ChatMCP_chat_mcp_access_none">無法存取 MCP 伺服器。</string>
+			<string id="ChatMCP_chat_mcp_access_registry">Allows access to MCP servers listed in the registry that VS Code is connected to.</string>
+			<string id="ChatMCP_chat_mcp_access_any">允許存取任何已安裝的 MCP 伺服器。</string>
+			<string id="ChatPluginsEnabled">ChatPluginsEnabled</string>
+			<string id="ChatPluginsEnabled_chat_plugins_enabled">在聊天中啟用 Agent 外掛程式整合。</string>
+			<string id="ChatStrictMarketplaces">ChatStrictMarketplaces</string>
+			<string id="ChatStrictMarketplaces_chat_plugins_strictMarketplaces_policy">外掛程式市集來源的允許清單。已設定時，只會信任符合項目的市集; 空的陣列會封鎖所有市集。</string>
+			<string id="ChatStrictPluginOnlyCustomization">ChatStrictPluginOnlyCustomization</string>
+			<string id="ChatStrictPluginOnlyCustomization_chat_customizations_strictPluginOnlyCustomization_policy">Blocks standalone user and workspace skills, agents, hooks, instructions, and MCP servers while keeping eligible plugin customizations available.</string>
+			<string id="ChatToolsAutoApprove">ChatToolsAutoApprove</string>
+			<string id="ChatToolsAutoApprove_autoApprove3_description">全域自動核准 (亦稱「YOLO 模式」) 會完全停用對所有工作區中所有工具的手動核准，使 Agent 得以完全自主運作。此舉極其危險，且*絕不建議採用。即使是 GitHub Codespaces 和開發容器這樣的容器化環境，也可能因使用者金鑰轉送到容器而遭到入侵。
+
+此功能會停用重大安全性保護，並使攻擊者更容易入侵機器。
+
+注意: 此設定僅控制工具核准，並不會阻止 Agent 提出問題。若要自動回答 Agent 的問題，請使用 `#chat.autoReply#` 設定。</string>
+			<string id="ChatToolsEligibleForAutoApproval">ChatToolsEligibleForAutoApproval</string>
+			<string id="ChatToolsEligibleForAutoApproval_chat_tools_eligibleForAutoApproval">控制哪些工具符合自動核准資格。設定為 'false' 的工具將始終顯示確認，且絕不會提供自動批准的選項。預設行為 (或將工具設定為 'true' ) 可能會讓該工具提供自動核准的選項。</string>
+			<string id="Claude3PIntegration">Claude3PIntegration</string>
+			<string id="Claude3PIntegration_chat_agentHost_claudeAgent_enabled_policy">在 VS Code 中啟用 Claude Agent 工作階段。直接在編輯器中開始和繼續 Anthropic 的 Claude Agent SDK 所提供的代理程式程式碼編寫工作階段。使用您現有的 Copilot 訂用帳戶。</string>
+			<string id="Codex3PIntegration">Codex3PIntegration</string>
+			<string id="Codex3PIntegration_chat_agentHost_codexAgent_enabled_policy">Enable Codex Agent sessions in VS Code. Start and resume agentic coding sessions powered by OpenAI Codex. Usage can be routed through GitHub Copilot or authenticated directly with an OpenAI account.</string>
+			<string id="CopilotNextEditSuggestions">CopilotNextEditSuggestions</string>
+			<string id="CopilotNextEditSuggestions_github_copilot_nextEditSuggestions_enabled">Whether to enable next edit suggestions (NES). NES can propose a next edit based on your recent changes.</string>
+			<string id="CopilotOtelCaptureContent">CopilotOtelCaptureContent</string>
+			<string id="CopilotOtelCaptureContent_chat_agentHost_otel_captureContent_policy">控制 Copilot OpenTelemetry 匯出是否擷取提示、回應和工具內容。</string>
+			<string id="CopilotOtelEnabled">CopilotOtelEnabled</string>
+			<string id="CopilotOtelEnabled_chat_agentHost_otel_enabled_policy">控制是否已啟用 Copilot OpenTelemetry 匯出。受控時，使用者無法覆寫企業值。</string>
+			<string id="CopilotOtelEndpoint">CopilotOtelEndpoint</string>
+			<string id="CopilotOtelEndpoint_chat_agentHost_otel_otlpEndpoint_policy">控制 Copilot OpenTelemetry 匯出的企業受控 OTLP 收集器端點。</string>
+			<string id="CopilotOtelHeaders">CopilotOtelHeaders</string>
+			<string id="CopilotOtelHeaders_chat_agentHost_otel_headers_policy">控制 Copilot OpenTelemetry 匯出的企業受控 OTLP 匯出工具標頭。</string>
+			<string id="CopilotOtelOtlpProtocol">CopilotOtelOtlpProtocol</string>
+			<string id="CopilotOtelOtlpProtocol_chat_agentHost_otel_otlpProtocol_policy">控制 Copilot OpenTelemetry 匯出的企業受控 OTLP 有線通訊協定 (Protobuf 與 JSON)。</string>
+			<string id="CopilotOtelOutfile">CopilotOtelOutfile</string>
+			<string id="CopilotOtelOutfile_chat_agentHost_otel_outfile_policy">在設定企業受控的 Copilot OpenTelemetry 匯出時，防止本機檔案匯出。</string>
+			<string id="CopilotOtelProtocol">CopilotOtelProtocol</string>
+			<string id="CopilotOtelProtocol_chat_agentHost_otel_protocol_policy">控制 Copilot OpenTelemetry 匯出的企業受控 OTLP 匯出通訊協定。</string>
+			<string id="CopilotOtelProtocol_chat_agentHost_otel_protocol_policy_otlpHttp">使用 OTLP over HTTP。</string>
+			<string id="CopilotOtelProtocol_chat_agentHost_otel_protocol_policy_otlpGrpc">使用 OTLP over gRPC。</string>
+			<string id="CopilotOtelProtocol_chat_agentHost_otel_protocol_policy_console">企業受控設定未選取主控台匯出工具。</string>
+			<string id="CopilotOtelProtocol_chat_agentHost_otel_protocol_policy_file">企業受控設定未選取檔案匯出工具。</string>
+			<string id="CopilotOtelResourceAttributes">CopilotOtelResourceAttributes</string>
+			<string id="CopilotOtelResourceAttributes_chat_agentHost_otel_resourceAttributes_policy">控制 Copilot OpenTelemetry 匯出的企業受控 OTel 資源屬性。</string>
+			<string id="CopilotOtelServiceName">CopilotOtelServiceName</string>
+			<string id="CopilotOtelServiceName_chat_agentHost_otel_serviceName_policy">控制 Copilot OpenTelemetry 匯出的企業受控 OTel `service.name` 資源屬性。</string>
+			<string id="CopilotReviewAgent">CopilotReviewAgent</string>
+			<string id="CopilotReviewAgent_github_copilot_chat_reviewAgent_enabled">Enables the code review agent.</string>
+			<string id="CopilotReviewSelection">CopilotReviewSelection</string>
+			<string id="CopilotReviewSelection_github_copilot_chat_reviewSelection_enabled">Enables code review on current selection.</string>
+			<string id="CopilotSessionSync">CopilotSessionSync</string>
+			<string id="CopilotSessionSync_chat_sessionSync_enabled_policy">啟用工作階段同步至 GitHub.com，以獲取跨裝置 Copilot 工作階段歷程記錄。若被組織原則停用，工作階段資料僅保留於本機。</string>
+			<string id="DictationEnabled">DictationEnabled</string>
+			<string id="DictationEnabled_dictation_enabled_policy">Controls whether dictation is available across the product (chat input, editor, and terminal).</string>
+			<string id="DictationLLMCleanup">DictationLLMCleanup</string>
+			<string id="DictationLLMCleanup_dictation_experimental_llmCleanup_policy">Controls whether final dictation transcripts are sent to a language model for cleanup.</string>
+			<string id="DictationModel">DictationModel</string>
+			<string id="DictationModel_dictation_model_policy">Controls the transcription model used for dictation.</string>
+			<string id="DictationModel_dictation_model_nemotronMultilingual_policy">Use the on-device transcription model. Audio does not leave the device.</string>
+			<string id="DictationModel_dictation_model_mai_policy">Use the cloud transcription service. Audio is streamed to the service.</string>
+			<string id="McpEnterpriseManagedAuthIdp">McpEnterpriseManagedAuthIdp</string>
+			<string id="McpEnterpriseManagedAuthIdp_mcp_enterpriseManagedAuth_idp_policy">用於企業管理的 Model Context Protocol (MCP) 伺服器驗證的 OAuth/OIDC IdP 設定。</string>
+			<string id="McpGalleryServiceUrl">McpGalleryServiceUrl</string>
+			<string id="McpGalleryServiceUrl_mcp_gallery_serviceUrl">設定要連線的 MCP 圖庫服務 URL</string>
+			<string id="AllowedExtensions">AllowedExtensions</string>
+			<string id="AllowedExtensions_extensions_allowed_policy">指定允許使用的延伸模組清單。這可透過限制使用未經授權的延伸模組，協助保有安全且一致的開發環境。詳細資訊: https://aka.ms/vscode/enterprise/extensions/allowed</string>
+			<string id="ExtensionGalleryAuthProvider">ExtensionGalleryAuthProvider</string>
+			<string id="ExtensionGalleryAuthProvider_extensions_gallery_authProvider">Configure the authentication provider for the Extensions Marketplace</string>
+			<string id="ExtensionGalleryAuthProvider_extensions_gallery_authProvider_github">Authenticate to the Extensions Marketplace using GitHub.</string>
+			<string id="ExtensionGalleryAuthProvider_extensions_gallery_authProvider_microsoft">Authenticate to the Extensions Marketplace using a Microsoft (Entra ID) account.</string>
+			<string id="ExtensionGalleryServiceUrl">ExtensionGalleryServiceUrl</string>
+			<string id="ExtensionGalleryServiceUrl_extensions_gallery_serviceUrl">設定要連線至的 Marketplace 服務 URL</string>
+			<string id="ExtensionsAutoUpdate">ExtensionsAutoUpdate</string>
+			<string id="ExtensionsAutoUpdate_extensions_autoUpdate">控制延伸模組的自動更新表現方式。更新擷取自 Microsoft 線上服務。</string>
+			<string id="ExtensionsAutoUpdate_extensions_autoUpdate_on">僅為已啟用的延伸模組自動下載和安裝更新。</string>
+			<string id="ExtensionsAutoUpdate_extensions_autoUpdate_off">延伸模組不會自動更新。</string>
+			<string id="ExtensionsAutoUpdateDelay">ExtensionsAutoUpdateDelay</string>
+			<string id="ExtensionsAutoUpdateDelay_extensions_autoUpdateDelay">控制延伸模組更新發佈後且自動安裝前的延遲時間 (以小時表示)。僅在 `#extensions.autoUpdate#` 設定為 `on` 時套用。此延遲有助於避免在發行後立即安裝可能有問題的更新。</string>
+			<string id="ChatAgentSandboxAllowAutoApprove">ChatAgentSandboxAllowAutoApprove</string>
+			<string id="ChatAgentSandboxAllowAutoApprove_agentSandbox_allowAutoApprove">控制是否自動核准在沙箱內執行的代理程式模式終端命令。停用時，終端機中的執行工具會使用現有的核准流程。這僅適用於啟用 {0} 時。</string>
+			<string id="ChatAgentSandboxAllowNetwork">ChatAgentSandboxAllowNetwork</string>
+			<string id="ChatAgentSandboxAllowNetwork_agentSandbox_allowNetwork">啟用 {0} 時，控制是否要允許沙箱中的所有網路網域。啟用時，沙箱會保留檔案系統限制，同時放寬所有網路限制。</string>
+			<string id="ChatAgentSandboxAllowUnsandboxedCommands">ChatAgentSandboxAllowUnsandboxedCommands</string>
+			<string id="ChatAgentSandboxAllowUnsandboxedCommands_agentSandbox_allowUnsandboxedCommands">控制當沙箱內命令失敗，或沙箱限制會封鎖命令時，代理程式模式終端命令是否可以在使用者確認後於沙箱外執行。這僅適用於啟用 {0} 時。</string>
+			<string id="ChatAgentSandboxEnabled">ChatAgentSandboxEnabled</string>
+			<string id="ChatAgentSandboxEnabled_agentSandbox_enabledSetting">控制 Agent 模式是否使用沙箱來限制工具的功能。啟用後，終端等工具會在沙箱環境中執行，以限制對系統的存取。請使用 {0} 來允許所有網路網域。</string>
+			<string id="ChatAgentSandboxEnabled_agentSandbox_enabledSetting_offDescription">停用代理程式模式工具的沙箱功能</string>
+			<string id="ChatAgentSandboxEnabled_agentSandbox_enabledSetting_onDescription">啟用代理程式模式工具的沙箱功能。</string>
+			<string id="ChatToolsTerminalEnableAutoApprove">ChatToolsTerminalEnableAutoApprove</string>
+			<string id="ChatToolsTerminalEnableAutoApprove_autoApproveMode_description">控制是否允許在終端機工具中自動核准。</string>
+			<string id="EnableFeedback">EnableFeedback</string>
+			<string id="EnableFeedback_telemetry_feedback_enabled">啟用意見反應機制，例如問題回報程式、調查和其他意見反應選項。</string>
+			<string id="TelemetryLevel">TelemetryLevel</string>
+			<string id="TelemetryLevel_telemetry_telemetryLevel_policyDescription">控制遙測層級。</string>
+			<string id="TelemetryLevel_telemetry_telemetryLevel_default">傳送使用狀況資料、錯誤和當機報告。</string>
+			<string id="TelemetryLevel_telemetry_telemetryLevel_error">傳送一般錯誤遙測和當機報告。</string>
+			<string id="TelemetryLevel_telemetry_telemetryLevel_crash">傳送 OS 層級當機報告。</string>
+			<string id="TelemetryLevel_telemetry_telemetryLevel_off">停用所有產品遙測。</string>
+			<string id="UpdateMode">UpdateMode</string>
+			<string id="UpdateMode_updateMode">設定是否要接收自動更新。系統會從 Microsoft 線上服務擷取更新。</string>
+			<string id="UpdateMode_none">無</string>
+			<string id="UpdateMode_manual">停用自動背景更新檢查。若您手動檢查更新，可取得更新。</string>
+			<string id="UpdateMode_start">開始</string>
+			<string id="UpdateMode_default">系統</string>
+		</stringTable>
+		<presentationTable>
+			<presentation id="AgentsVoice"><checkBox refId="AgentsVoice">AgentsVoice</checkBox></presentation>
+			<presentation id="BrowserChatTools"><checkBox refId="BrowserChatTools">BrowserChatTools</checkBox></presentation>
+			<presentation id="ChatAgentAllowedNetworkDomains"><multiTextBox refId="ChatAgentAllowedNetworkDomains" /></presentation>
+			<presentation id="ChatAgentDeniedNetworkDomains"><multiTextBox refId="ChatAgentDeniedNetworkDomains" /></presentation>
+			<presentation id="ChatAgentExtensionTools"><checkBox refId="ChatAgentExtensionTools">ChatAgentExtensionTools</checkBox></presentation>
+			<presentation id="ChatAgentHostCustomTerminalTool"><checkBox refId="ChatAgentHostCustomTerminalTool">ChatAgentHostCustomTerminalTool</checkBox></presentation>
+			<presentation id="ChatAgentMode"><checkBox refId="ChatAgentMode">ChatAgentMode</checkBox></presentation>
+			<presentation id="ChatAgentNetworkFilter"><checkBox refId="ChatAgentNetworkFilter">ChatAgentNetworkFilter</checkBox></presentation>
+			<presentation id="ChatAllowedMcpServers"><multiTextBox refId="ChatAllowedMcpServers" /></presentation>
+			<presentation id="ChatAllowManagedHooksOnly"><checkBox refId="ChatAllowManagedHooksOnly">ChatAllowManagedHooksOnly</checkBox></presentation>
+			<presentation id="ChatAllowManagedMcpServersOnly"><checkBox refId="ChatAllowManagedMcpServersOnly">ChatAllowManagedMcpServersOnly</checkBox></presentation>
+			<presentation id="ChatApprovedAccountOrganizations"><multiTextBox refId="ChatApprovedAccountOrganizations" /></presentation>
+			<presentation id="ChatDefaultModel"><textBox refId="ChatDefaultModel"><label>ChatDefaultModel:</label></textBox></presentation>
+			<presentation id="ChatDeniedMcpServers"><multiTextBox refId="ChatDeniedMcpServers" /></presentation>
+			<presentation id="ChatEditorPreferCopilotHarness"><checkBox refId="ChatEditorPreferCopilotHarness">ChatEditorPreferCopilotHarness</checkBox></presentation>
+			<presentation id="ChatEnabledPlugins"><multiTextBox refId="ChatEnabledPlugins" /></presentation>
+			<presentation id="ChatExtraMarketplaces"><multiTextBox refId="ChatExtraMarketplaces" /></presentation>
+			<presentation id="ChatHooks"><checkBox refId="ChatHooks">ChatHooks</checkBox></presentation>
+			<presentation id="ChatMCP"><dropdownList refId="ChatMCP" /></presentation>
+			<presentation id="ChatPluginsEnabled"><checkBox refId="ChatPluginsEnabled">ChatPluginsEnabled</checkBox></presentation>
+			<presentation id="ChatStrictMarketplaces"><multiTextBox refId="ChatStrictMarketplaces" /></presentation>
+			<presentation id="ChatStrictPluginOnlyCustomization"><checkBox refId="ChatStrictPluginOnlyCustomization">ChatStrictPluginOnlyCustomization</checkBox></presentation>
+			<presentation id="ChatToolsAutoApprove"><checkBox refId="ChatToolsAutoApprove">ChatToolsAutoApprove</checkBox></presentation>
+			<presentation id="ChatToolsEligibleForAutoApproval"><multiTextBox refId="ChatToolsEligibleForAutoApproval" /></presentation>
+			<presentation id="Claude3PIntegration"><checkBox refId="Claude3PIntegration">Claude3PIntegration</checkBox></presentation>
+			<presentation id="Codex3PIntegration"><checkBox refId="Codex3PIntegration">Codex3PIntegration</checkBox></presentation>
+			<presentation id="CopilotNextEditSuggestions"><checkBox refId="CopilotNextEditSuggestions">CopilotNextEditSuggestions</checkBox></presentation>
+			<presentation id="CopilotOtelCaptureContent"><checkBox refId="CopilotOtelCaptureContent">CopilotOtelCaptureContent</checkBox></presentation>
+			<presentation id="CopilotOtelEnabled"><checkBox refId="CopilotOtelEnabled">CopilotOtelEnabled</checkBox></presentation>
+			<presentation id="CopilotOtelEndpoint"><textBox refId="CopilotOtelEndpoint"><label>CopilotOtelEndpoint:</label></textBox></presentation>
+			<presentation id="CopilotOtelHeaders"><multiTextBox refId="CopilotOtelHeaders" /></presentation>
+			<presentation id="CopilotOtelOtlpProtocol"><textBox refId="CopilotOtelOtlpProtocol"><label>CopilotOtelOtlpProtocol:</label></textBox></presentation>
+			<presentation id="CopilotOtelOutfile"><textBox refId="CopilotOtelOutfile"><label>CopilotOtelOutfile:</label></textBox></presentation>
+			<presentation id="CopilotOtelProtocol"><dropdownList refId="CopilotOtelProtocol" /></presentation>
+			<presentation id="CopilotOtelResourceAttributes"><multiTextBox refId="CopilotOtelResourceAttributes" /></presentation>
+			<presentation id="CopilotOtelServiceName"><textBox refId="CopilotOtelServiceName"><label>CopilotOtelServiceName:</label></textBox></presentation>
+			<presentation id="CopilotReviewAgent"><checkBox refId="CopilotReviewAgent">CopilotReviewAgent</checkBox></presentation>
+			<presentation id="CopilotReviewSelection"><checkBox refId="CopilotReviewSelection">CopilotReviewSelection</checkBox></presentation>
+			<presentation id="CopilotSessionSync"><checkBox refId="CopilotSessionSync">CopilotSessionSync</checkBox></presentation>
+			<presentation id="DictationEnabled"><checkBox refId="DictationEnabled">DictationEnabled</checkBox></presentation>
+			<presentation id="DictationLLMCleanup"><checkBox refId="DictationLLMCleanup">DictationLLMCleanup</checkBox></presentation>
+			<presentation id="DictationModel"><dropdownList refId="DictationModel" /></presentation>
+			<presentation id="McpEnterpriseManagedAuthIdp"><multiTextBox refId="McpEnterpriseManagedAuthIdp" /></presentation>
+			<presentation id="McpGalleryServiceUrl"><textBox refId="McpGalleryServiceUrl"><label>McpGalleryServiceUrl:</label></textBox></presentation>
+			<presentation id="AllowedExtensions"><multiTextBox refId="AllowedExtensions" /></presentation>
+			<presentation id="ExtensionGalleryAuthProvider"><dropdownList refId="ExtensionGalleryAuthProvider" /></presentation>
+			<presentation id="ExtensionGalleryServiceUrl"><textBox refId="ExtensionGalleryServiceUrl"><label>ExtensionGalleryServiceUrl:</label></textBox></presentation>
+			<presentation id="ExtensionsAutoUpdate"><dropdownList refId="ExtensionsAutoUpdate" /></presentation>
+			<presentation id="ExtensionsAutoUpdateDelay"><decimalTextBox refId="ExtensionsAutoUpdateDelay" defaultValue="12">ExtensionsAutoUpdateDelay</decimalTextBox></presentation>
+			<presentation id="ChatAgentSandboxAllowAutoApprove"><checkBox refId="ChatAgentSandboxAllowAutoApprove">ChatAgentSandboxAllowAutoApprove</checkBox></presentation>
+			<presentation id="ChatAgentSandboxAllowNetwork"><checkBox refId="ChatAgentSandboxAllowNetwork">ChatAgentSandboxAllowNetwork</checkBox></presentation>
+			<presentation id="ChatAgentSandboxAllowUnsandboxedCommands"><checkBox refId="ChatAgentSandboxAllowUnsandboxedCommands">ChatAgentSandboxAllowUnsandboxedCommands</checkBox></presentation>
+			<presentation id="ChatAgentSandboxEnabled"><dropdownList refId="ChatAgentSandboxEnabled" /></presentation>
+			<presentation id="ChatToolsTerminalEnableAutoApprove"><checkBox refId="ChatToolsTerminalEnableAutoApprove">ChatToolsTerminalEnableAutoApprove</checkBox></presentation>
+			<presentation id="EnableFeedback"><checkBox refId="EnableFeedback">EnableFeedback</checkBox></presentation>
+			<presentation id="TelemetryLevel"><dropdownList refId="TelemetryLevel" /></presentation>
+			<presentation id="UpdateMode"><dropdownList refId="UpdateMode" /></presentation>
+		</presentationTable>
+	</resources>
+</policyDefinitionResources>

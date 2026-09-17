@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources revision="1.0" schemaVersion="1.0">
+	<displayName />
+	<description />
+	<resources>
+		<stringTable>
+			<string id="Application">Visual Studio Code</string>
+			<string id="Supported_1_101">Visual Studio Code &gt;= 1.101</string>
+			<string id="Supported_1_104">Visual Studio Code &gt;= 1.104</string>
+			<string id="Supported_1_107">Visual Studio Code &gt;= 1.107</string>
+			<string id="Supported_1_109">Visual Studio Code &gt;= 1.109</string>
+			<string id="Supported_1_110">Visual Studio Code &gt;= 1.110</string>
+			<string id="Supported_1_113">Visual Studio Code &gt;= 1.113</string>
+			<string id="Supported_1_116">Visual Studio Code &gt;= 1.116</string>
+			<string id="Supported_1_118">Visual Studio Code &gt;= 1.118</string>
+			<string id="Supported_1_121">Visual Studio Code &gt;= 1.121</string>
+			<string id="Supported_1_122">Visual Studio Code &gt;= 1.122</string>
+			<string id="Supported_1_125">Visual Studio Code &gt;= 1.125</string>
+			<string id="Supported_1_126">Visual Studio Code &gt;= 1.126</string>
+			<string id="Supported_1_127">Visual Studio Code &gt;= 1.127</string>
+			<string id="Supported_1_130">Visual Studio Code &gt;= 1.130</string>
+			<string id="Supported_1_131">Visual Studio Code &gt;= 1.131</string>
+			<string id="Supported_1_132">Visual Studio Code &gt;= 1.132</string>
+			<string id="Supported_1_134">Visual Studio Code &gt;= 1.134</string>
+			<string id="Supported_1_136">Visual Studio Code &gt;= 1.136</string>
+			<string id="Supported_1_137">Visual Studio Code &gt;= 1.137</string>
+			<string id="Supported_1_67">Visual Studio Code &gt;= 1.67</string>
+			<string id="Supported_1_96">Visual Studio Code &gt;= 1.96</string>
+			<string id="Supported_1_99">Visual Studio Code &gt;= 1.99</string>
+			<string id="Category_interactiveSessionConfigurationTitle">Интерактивный сеанс</string>
+			<string id="Category_extensionsConfigurationTitle">Расширения</string>
+			<string id="Category_terminalIntegratedConfigurationTitle">Встроенный терминал</string>
+			<string id="Category_telemetryConfigurationTitle">Телеметрия</string>
+			<string id="Category_updateConfigurationTitle">Обновить</string>
+			<string id="AgentsVoice">AgentsVoice</string>
+			<string id="AgentsVoice_agents_voice_enabled">Включите панель голосового режима в окне чата для обсуждения процесса написания кода с помощью голоса.</string>
+			<string id="BrowserChatTools">BrowserChatTools</string>
+			<string id="BrowserChatTools_browser_enableChatTools">При включении этой функции агенты чата могут использовать инструменты браузера для открытия страниц во встроенном браузере и взаимодействия с ними.</string>
+			<string id="ChatAgentAllowedNetworkDomains">ChatAgentAllowedNetworkDomains</string>
+			<string id="ChatAgentAllowedNetworkDomains_chat_agent_allowedNetworkDomains">Разрешенные домены для сетевого доступа с использованием инструментов агентов (инструмент получения, встроенный браузер). Применяется, когда включены {0} или {1} . Когда включен параметр {2} , разрешены все домены. Поддерживает подстановочные знаки, такие как {3} . Если разрешенные и запрещенные списки пусты, блокируются все домены. Запрещенные домены (см. {4} ) имеют приоритет.</string>
+			<string id="ChatAgentDeniedNetworkDomains">ChatAgentDeniedNetworkDomains</string>
+			<string id="ChatAgentDeniedNetworkDomains_chat_agent_deniedNetworkDomains">Запрет доменов для сетевого доступа с использованием инструментов агентов (инструмент получения, встроенный браузер). Применяется, когда включены {0} или {1} . Это не относится к случаю, когда включен параметр {2} . Имеет приоритет над {3} . Поддерживает подстановочные знаки, такие как {4} .</string>
+			<string id="ChatAgentExtensionTools">ChatAgentExtensionTools</string>
+			<string id="ChatAgentExtensionTools_chat_extensionToolsEnabled">Включите использование инструментов, предоставленных сторонними расширениями.</string>
+			<string id="ChatAgentHostCustomTerminalTool">ChatAgentHostCustomTerminalTool</string>
+			<string id="ChatAgentHostCustomTerminalTool_chat_agentHost_customTerminalTool_enabled_policy">Enable the Agent Host custom terminal tool override for Copilot SDK sessions.</string>
+			<string id="ChatAgentMode">ChatAgentMode</string>
+			<string id="ChatAgentMode_chat_agent_enabled_description">Если включено, режим агента можно активировать из чата, а инструменты использовать в агентных контекстах с побочными эффектами.</string>
+			<string id="ChatAgentNetworkFilter">ChatAgentNetworkFilter</string>
+			<string id="ChatAgentNetworkFilter_chat_agent_networkFilter">Если эта возможность включена, сетевой доступ с использованием инструментов агентов (инструмент получения, встроенный браузер) ограничивается в соответствии с {0} и {1}. Когда {2} включена, к этим инструментам также применяется Фильтрация доменов.</string>
+			<string id="ChatAllowedMcpServers">ChatAllowedMcpServers</string>
+			<string id="ChatAllowedMcpServers_chat_mcp_allowedServers_policy">Allowlist of Model Context Protocol servers. When set, only servers matching an entry may be installed or run; omit entirely to allow all servers (subject to the deny list).</string>
+			<string id="ChatAllowManagedHooksOnly">ChatAllowManagedHooksOnly</string>
+			<string id="ChatAllowManagedHooksOnly_chat_hooks_allowManagedOnly_policy">Allows hooks only from enterprise-managed sources and plugins force-enabled by policy.</string>
+			<string id="ChatAllowManagedMcpServersOnly">ChatAllowManagedMcpServersOnly</string>
+			<string id="ChatAllowManagedMcpServersOnly_chat_mcp_allowManagedServersOnly_policy">Use only the enterprise-managed MCP allowlist when deciding which servers may run.</string>
+			<string id="ChatApprovedAccountOrganizations">ChatApprovedAccountOrganizations</string>
+			<string id="ChatApprovedAccountOrganizations_chat_approvedAccountOrganizations_policy_description">Установка для этой политики непустого списка активирует механизм "Одобренные учетные записи": все функции ИИ остаются отключенными до тех пор, пока пользователь не войдет в учетную запись GitHub, организации которой пересекаются с данным списком, И пока не будут разрешены данные политики на стороне учетной записи. Сравнение нечувствительно к регистру. Используйте символ "*" в качестве подстановочного знака, чтобы разрешить доступ любому авторизованному пользователю GitHub или GHE (используйте этот вариант для развертываний GHE, в которых список организаций недоступен).</string>
+			<string id="ChatDefaultModel">ChatDefaultModel</string>
+			<string id="ChatDefaultModel_chat_defaultModel_policy">Устанавливает стандартную модель чата для новых бесед. Принимает значение "auto", название семейства моделей (например, "opus" или "gemini") или полный идентификатор модели. Пользователи по-прежнему могут менять модель в ходе разговора.</string>
+			<string id="ChatDeniedMcpServers">ChatDeniedMcpServers</string>
+			<string id="ChatDeniedMcpServers_chat_mcp_deniedServers_policy">Denylist of Model Context Protocol servers. Servers matching any entry are blocked from being installed or run, even if they also match the allow list; deny rules always take precedence.</string>
+			<string id="ChatEditorPreferCopilotHarness">ChatEditorPreferCopilotHarness</string>
+			<string id="ChatEditorPreferCopilotHarness_chat_editor_preferCopilotHarness_policy">Configure whether VS Code uses the Agent Host Copilot SDK instead of the local harness for new editor chat sessions.</string>
+			<string id="ChatEnabledPlugins">ChatEnabledPlugins</string>
+			<string id="ChatEnabledPlugins_chat_plugins_enabledPlugins_policy">Включение подключаемого модуля. Ключи представляют собой идентификаторы плагинов в формате `{plugin}@{marketplace}`; значения включают или отключают плагин.</string>
+			<string id="ChatExtraMarketplaces">ChatExtraMarketplaces</string>
+			<string id="ChatExtraMarketplaces_chat_plugins_extraMarketplaces_policy">Additional plugin marketplaces to query. Keys are marketplace names; values are GitHub shorthand (`owner/repo[#ref]`) or Git URIs (`{url}[#ref]`), optionally with an enterprise-managed auto-update override.</string>
+			<string id="ChatHooks">ChatHooks</string>
+			<string id="ChatHooks_chat_useHooks_description">Controls whether chat hooks are executed at strategic points during an agent's workflow. Hooks are loaded from the files configured in `#chat.hookFilesLocations#`. This setting is only used by the Local agent harness.</string>
+			<string id="ChatMCP">ChatMCP</string>
+			<string id="ChatMCP_chat_mcp_access">Управляет доступом к установленным серверам протокола контекста модели.</string>
+			<string id="ChatMCP_chat_mcp_access_none">Нет доступа к серверам MCP.</string>
+			<string id="ChatMCP_chat_mcp_access_registry">Allows access to MCP servers listed in the registry that VS Code is connected to.</string>
+			<string id="ChatMCP_chat_mcp_access_any">Разрешить доступ к любому установленному серверу MCP.</string>
+			<string id="ChatPluginsEnabled">ChatPluginsEnabled</string>
+			<string id="ChatPluginsEnabled_chat_plugins_enabled">Включить интеграцию плагина агента в чате.</string>
+			<string id="ChatStrictMarketplaces">ChatStrictMarketplaces</string>
+			<string id="ChatStrictMarketplaces_chat_plugins_strictMarketplaces_policy">Список разрешенных источников плагинов из магазинов приложений. Если задано соответствующее значение, доверять следует только торговым площадкам, соответствующим записи; пустой массив блокирует все торговые площадки.</string>
+			<string id="ChatStrictPluginOnlyCustomization">ChatStrictPluginOnlyCustomization</string>
+			<string id="ChatStrictPluginOnlyCustomization_chat_customizations_strictPluginOnlyCustomization_policy">Blocks standalone user and workspace skills, agents, hooks, instructions, and MCP servers while keeping eligible plugin customizations available.</string>
+			<string id="ChatToolsAutoApprove">ChatToolsAutoApprove</string>
+			<string id="ChatToolsAutoApprove_autoApprove3_description">Глобальное автоматическое утверждение, также известное как "режим YOLO", полностью отключает ручное утверждение для всех инструментов во всех рабочих областях, позволяя агенту действовать полностью автономно. Это крайне опасно и *никогда* не рекомендуется. Даже в контейнерных средах, таких как Codespaces и Dev Containers, ключи пользователей перенаправляются в контейнер, который может быть скомпрометирован.
+
+Эта функция отключает критически важные средства защиты и значительно упрощает злоумышленнику возможность компрометации компьютера.
+
+Примечание. Этот параметр управляет только утверждением инструментов и не запрещает агенту задавать вопросы. Чтобы автоматически отвечать на вопросы агента, используйте параметр `#chat.autoReply#`.</string>
+			<string id="ChatToolsEligibleForAutoApproval">ChatToolsEligibleForAutoApproval</string>
+			<string id="ChatToolsEligibleForAutoApproval_chat_tools_eligibleForAutoApproval">Определяет, какие инструменты имеют право на автоматическое одобрение. Инструменты, для которых установлено значение "false", всегда будут выводить подтверждение и никогда не будут предлагать возможность автоматического утверждения. Поведение по умолчанию (или установка для инструмента значения "true") может привести к тому, что инструмент предложит параметры автоматического утверждения.</string>
+			<string id="Claude3PIntegration">Claude3PIntegration</string>
+			<string id="Claude3PIntegration_chat_agentHost_claudeAgent_enabled_policy">Включите сеансы агента Claude в VS Code. Начинайте и возобновляйте сеансы агентного программирования, использующие Anthropic Claude Agent SDK, непосредственно в редакторе. Использует существующую подписку Copilot.</string>
+			<string id="Codex3PIntegration">Codex3PIntegration</string>
+			<string id="Codex3PIntegration_chat_agentHost_codexAgent_enabled_policy">Enable Codex Agent sessions in VS Code. Start and resume agentic coding sessions powered by OpenAI Codex. Usage can be routed through GitHub Copilot or authenticated directly with an OpenAI account.</string>
+			<string id="CopilotNextEditSuggestions">CopilotNextEditSuggestions</string>
+			<string id="CopilotNextEditSuggestions_github_copilot_nextEditSuggestions_enabled">Whether to enable next edit suggestions (NES). NES can propose a next edit based on your recent changes.</string>
+			<string id="CopilotOtelCaptureContent">CopilotOtelCaptureContent</string>
+			<string id="CopilotOtelCaptureContent_chat_agentHost_otel_captureContent_policy">Определяет, будет ли при экспорте Copilot OpenTelemetry фиксироваться содержимое подсказок, ответов и инструментов.</string>
+			<string id="CopilotOtelEnabled">CopilotOtelEnabled</string>
+			<string id="CopilotOtelEnabled_chat_agentHost_otel_enabled_policy">Управляет включением экспорта OpenTelemetry в Copilot. При наличии соответствующих прав пользователи не могут изменить значение, установленное в масштабах предприятия.</string>
+			<string id="CopilotOtelEndpoint">CopilotOtelEndpoint</string>
+			<string id="CopilotOtelEndpoint_chat_agentHost_otel_otlpEndpoint_policy">Управляет управляемой предприятием конечной точкой сбора OTLP для экспорта данных из Copilot OpenTelemetry</string>
+			<string id="CopilotOtelHeaders">CopilotOtelHeaders</string>
+			<string id="CopilotOtelHeaders_chat_agentHost_otel_headers_policy">Управляет заголовками экспортера OTLP, управляемого корпоративной сетью, для экспорта данных из Copilot OpenTelemetry.</string>
+			<string id="CopilotOtelOtlpProtocol">CopilotOtelOtlpProtocol</string>
+			<string id="CopilotOtelOtlpProtocol_chat_agentHost_otel_otlpProtocol_policy">Управляет протоколом передачи данных OTLP, управляемым предприятием (protobuf против JSON), для экспорта данных из Copilot OpenTelemetry.</string>
+			<string id="CopilotOtelOutfile">CopilotOtelOutfile</string>
+			<string id="CopilotOtelOutfile_chat_agentHost_otel_outfile_policy">Предотвращает экспорт локальных файлов при настройке экспорта OpenTelemetry через корпоративное приложение Copilot.</string>
+			<string id="CopilotOtelProtocol">CopilotOtelProtocol</string>
+			<string id="CopilotOtelProtocol_chat_agentHost_otel_protocol_policy">Управляет протоколом OTLP, управляемым предприятием, для экспорта данных из Copilot OpenTelemetry.</string>
+			<string id="CopilotOtelProtocol_chat_agentHost_otel_protocol_policy_otlpHttp">Используйте OTLP вместо HTTP.</string>
+			<string id="CopilotOtelProtocol_chat_agentHost_otel_protocol_policy_otlpGrpc">Используйте OTLP вместо gRPC.</string>
+			<string id="CopilotOtelProtocol_chat_agentHost_otel_protocol_policy_console">Функция экспорта через консоль не выбрана в настройках, управляемых корпоративной сетью.</string>
+			<string id="CopilotOtelProtocol_chat_agentHost_otel_protocol_policy_file">Функция экспорта файлов не выбрана в настройках, управляемых корпоративной сетью.</string>
+			<string id="CopilotOtelResourceAttributes">CopilotOtelResourceAttributes</string>
+			<string id="CopilotOtelResourceAttributes_chat_agentHost_otel_resourceAttributes_policy">Управляет атрибутами ресурсов OTel, управляемых предприятием, для экспорта в Copilot OpenTelemetry.</string>
+			<string id="CopilotOtelServiceName">CopilotOtelServiceName</string>
+			<string id="CopilotOtelServiceName_chat_agentHost_otel_serviceName_policy">Управляет атрибутом ресурса `service.name` OTel, управляемым предприятием, для экспорта данных из Copilot OpenTelemetry.</string>
+			<string id="CopilotReviewAgent">CopilotReviewAgent</string>
+			<string id="CopilotReviewAgent_github_copilot_chat_reviewAgent_enabled">Enables the code review agent.</string>
+			<string id="CopilotReviewSelection">CopilotReviewSelection</string>
+			<string id="CopilotReviewSelection_github_copilot_chat_reviewSelection_enabled">Enables code review on current selection.</string>
+			<string id="CopilotSessionSync">CopilotSessionSync</string>
+			<string id="CopilotSessionSync_chat_sessionSync_enabled_policy">Включите синхронизацию сессий с GitHub.com для отображения истории сессий Copilot на разных устройствах. Если эта функция отключена политикой организации, данные сессии хранятся только локально.</string>
+			<string id="DictationEnabled">DictationEnabled</string>
+			<string id="DictationEnabled_dictation_enabled_policy">Controls whether dictation is available across the product (chat input, editor, and terminal).</string>
+			<string id="DictationLLMCleanup">DictationLLMCleanup</string>
+			<string id="DictationLLMCleanup_dictation_experimental_llmCleanup_policy">Controls whether final dictation transcripts are sent to a language model for cleanup.</string>
+			<string id="DictationModel">DictationModel</string>
+			<string id="DictationModel_dictation_model_policy">Controls the transcription model used for dictation.</string>
+			<string id="DictationModel_dictation_model_nemotronMultilingual_policy">Use the on-device transcription model. Audio does not leave the device.</string>
+			<string id="DictationModel_dictation_model_mai_policy">Use the cloud transcription service. Audio is streamed to the service.</string>
+			<string id="McpEnterpriseManagedAuthIdp">McpEnterpriseManagedAuthIdp</string>
+			<string id="McpEnterpriseManagedAuthIdp_mcp_enterpriseManagedAuth_idp_policy">Конфигурация поставщика удостоверений OAuth/OIDC, используемая для проверки подлинности серверов протокола контекста модели (MCP), управляемых предприятием.</string>
+			<string id="McpGalleryServiceUrl">McpGalleryServiceUrl</string>
+			<string id="McpGalleryServiceUrl_mcp_gallery_serviceUrl">Настройте URL-адрес службы галереи MCP для подключения</string>
+			<string id="AllowedExtensions">AllowedExtensions</string>
+			<string id="AllowedExtensions_extensions_allowed_policy">Укажите список расширений, которые можно использовать. Это помогает поддерживать безопасную и согласованную среду разработки, запрещая использование несанкционированных расширений. Подробнее: https://aka.ms/vscode/enterprise/extensions/allowed</string>
+			<string id="ExtensionGalleryAuthProvider">ExtensionGalleryAuthProvider</string>
+			<string id="ExtensionGalleryAuthProvider_extensions_gallery_authProvider">Configure the authentication provider for the Extensions Marketplace</string>
+			<string id="ExtensionGalleryAuthProvider_extensions_gallery_authProvider_github">Authenticate to the Extensions Marketplace using GitHub.</string>
+			<string id="ExtensionGalleryAuthProvider_extensions_gallery_authProvider_microsoft">Authenticate to the Extensions Marketplace using a Microsoft (Entra ID) account.</string>
+			<string id="ExtensionGalleryServiceUrl">ExtensionGalleryServiceUrl</string>
+			<string id="ExtensionGalleryServiceUrl_extensions_gallery_serviceUrl">Настройте URL-адрес службы Marketplace для подключения</string>
+			<string id="ExtensionsAutoUpdate">ExtensionsAutoUpdate</string>
+			<string id="ExtensionsAutoUpdate_extensions_autoUpdate">Управляет поведением автоматического обновления расширений. Обновления извлекаются из веб-службы Майкрософт.</string>
+			<string id="ExtensionsAutoUpdate_extensions_autoUpdate_on">Скачивать и автоматически устанавливать обновления только для включенных расширений.</string>
+			<string id="ExtensionsAutoUpdate_extensions_autoUpdate_off">Расширения не обновляются автоматически.</string>
+			<string id="ExtensionsAutoUpdateDelay">ExtensionsAutoUpdateDelay</string>
+			<string id="ExtensionsAutoUpdateDelay_extensions_autoUpdateDelay">Управляет задержкой в часах между публикацией обновления расширения и его автоматической установкой. Применяется только тогда, когда для `#extensions.autoUpdate#` установлено значение `on`. Эта задержка позволяет избежать установки потенциально проблемных обновлений сразу после их выпуска.</string>
+			<string id="ChatAgentSandboxAllowAutoApprove">ChatAgentSandboxAllowAutoApprove</string>
+			<string id="ChatAgentSandboxAllowAutoApprove_agentSandbox_allowAutoApprove">Определяет, подлежат ли автоматическому утверждению команды терминала в режиме агента, выполняемые внутри песочницы. При отключении инструмент запуска в терминале использует существующий процесс утверждения. Это применимо только при включенном {0}.</string>
+			<string id="ChatAgentSandboxAllowNetwork">ChatAgentSandboxAllowNetwork</string>
+			<string id="ChatAgentSandboxAllowNetwork_agentSandbox_allowNetwork">Если параметр "{0}" включен, определяет, следует ли разрешать все домены в песочнице. Если параметр включен, песочница сохраняет ограничения файловой системы, при этом ослабляя ограничения доступа к сети.</string>
+			<string id="ChatAgentSandboxAllowUnsandboxedCommands">ChatAgentSandboxAllowUnsandboxedCommands</string>
+			<string id="ChatAgentSandboxAllowUnsandboxedCommands_agentSandbox_allowUnsandboxedCommands">Определяет, могут ли команды терминала в режиме агента выполняться вне песочницы (после подтверждения пользователем) в тех случаях, когда выполнение команды внутри песочницы завершается с ошибкой или когда ограничения песочницы блокируют эту команду. Это применимо только при включенном {0}.</string>
+			<string id="ChatAgentSandboxEnabled">ChatAgentSandboxEnabled</string>
+			<string id="ChatAgentSandboxEnabled_agentSandbox_enabledSetting">Определяет, использует ли режим агента песочницу для ограничения возможностей инструментов. Если параметр включен, такие средства, как терминал, запускаются в среде песочницы, чтобы ограничить доступ к системе. Используйте {0}, чтобы разрешить доступ ко всем доменам.</string>
+			<string id="ChatAgentSandboxEnabled_agentSandbox_enabledSetting_offDescription">Отключить песочницу для инструментов в режиме агента.</string>
+			<string id="ChatAgentSandboxEnabled_agentSandbox_enabledSetting_onDescription">Включите песочницу для инструментов режима агента.</string>
+			<string id="ChatToolsTerminalEnableAutoApprove">ChatToolsTerminalEnableAutoApprove</string>
+			<string id="ChatToolsTerminalEnableAutoApprove_autoApproveMode_description">Определяет, следует ли разрешить автоматическое утверждение при запуске в инструменте терминала.</string>
+			<string id="EnableFeedback">EnableFeedback</string>
+			<string id="EnableFeedback_telemetry_feedback_enabled">Включите механизмы обратной связи, например средство отчета о проблемах, опросы и другие варианты получения отзывов.</string>
+			<string id="TelemetryLevel">TelemetryLevel</string>
+			<string id="TelemetryLevel_telemetry_telemetryLevel_policyDescription">Управляет уровнем телеметрии.</string>
+			<string id="TelemetryLevel_telemetry_telemetryLevel_default">Отправляет данные об использовании, сведения об ошибках и отчеты о сбоях.</string>
+			<string id="TelemetryLevel_telemetry_telemetryLevel_error">Отправляет общие отчеты об ошибках телеметрии и сбоях.</string>
+			<string id="TelemetryLevel_telemetry_telemetryLevel_crash">Отправляет отчеты о сбоях на уровне ОС.</string>
+			<string id="TelemetryLevel_telemetry_telemetryLevel_off">Отключает все данные телеметрии продукта.</string>
+			<string id="UpdateMode">UpdateMode</string>
+			<string id="UpdateMode_updateMode">Укажите, нужно ли вам получать автоматические обновления. Для получения обновлений используется веб-служба Майкрософт.</string>
+			<string id="UpdateMode_none">Нет</string>
+			<string id="UpdateMode_manual">Отключение автоматических фоновых проверок на наличие обновлений. Обновления будут доступны, если вы вручную проверите их наличие.</string>
+			<string id="UpdateMode_start">Запуск</string>
+			<string id="UpdateMode_default">Система</string>
+		</stringTable>
+		<presentationTable>
+			<presentation id="AgentsVoice"><checkBox refId="AgentsVoice">AgentsVoice</checkBox></presentation>
+			<presentation id="BrowserChatTools"><checkBox refId="BrowserChatTools">BrowserChatTools</checkBox></presentation>
+			<presentation id="ChatAgentAllowedNetworkDomains"><multiTextBox refId="ChatAgentAllowedNetworkDomains" /></presentation>
+			<presentation id="ChatAgentDeniedNetworkDomains"><multiTextBox refId="ChatAgentDeniedNetworkDomains" /></presentation>
+			<presentation id="ChatAgentExtensionTools"><checkBox refId="ChatAgentExtensionTools">ChatAgentExtensionTools</checkBox></presentation>
+			<presentation id="ChatAgentHostCustomTerminalTool"><checkBox refId="ChatAgentHostCustomTerminalTool">ChatAgentHostCustomTerminalTool</checkBox></presentation>
+			<presentation id="ChatAgentMode"><checkBox refId="ChatAgentMode">ChatAgentMode</checkBox></presentation>
+			<presentation id="ChatAgentNetworkFilter"><checkBox refId="ChatAgentNetworkFilter">ChatAgentNetworkFilter</checkBox></presentation>
+			<presentation id="ChatAllowedMcpServers"><multiTextBox refId="ChatAllowedMcpServers" /></presentation>
+			<presentation id="ChatAllowManagedHooksOnly"><checkBox refId="ChatAllowManagedHooksOnly">ChatAllowManagedHooksOnly</checkBox></presentation>
+			<presentation id="ChatAllowManagedMcpServersOnly"><checkBox refId="ChatAllowManagedMcpServersOnly">ChatAllowManagedMcpServersOnly</checkBox></presentation>
+			<presentation id="ChatApprovedAccountOrganizations"><multiTextBox refId="ChatApprovedAccountOrganizations" /></presentation>
+			<presentation id="ChatDefaultModel"><textBox refId="ChatDefaultModel"><label>ChatDefaultModel:</label></textBox></presentation>
+			<presentation id="ChatDeniedMcpServers"><multiTextBox refId="ChatDeniedMcpServers" /></presentation>
+			<presentation id="ChatEditorPreferCopilotHarness"><checkBox refId="ChatEditorPreferCopilotHarness">ChatEditorPreferCopilotHarness</checkBox></presentation>
+			<presentation id="ChatEnabledPlugins"><multiTextBox refId="ChatEnabledPlugins" /></presentation>
+			<presentation id="ChatExtraMarketplaces"><multiTextBox refId="ChatExtraMarketplaces" /></presentation>
+			<presentation id="ChatHooks"><checkBox refId="ChatHooks">ChatHooks</checkBox></presentation>
+			<presentation id="ChatMCP"><dropdownList refId="ChatMCP" /></presentation>
+			<presentation id="ChatPluginsEnabled"><checkBox refId="ChatPluginsEnabled">ChatPluginsEnabled</checkBox></presentation>
+			<presentation id="ChatStrictMarketplaces"><multiTextBox refId="ChatStrictMarketplaces" /></presentation>
+			<presentation id="ChatStrictPluginOnlyCustomization"><checkBox refId="ChatStrictPluginOnlyCustomization">ChatStrictPluginOnlyCustomization</checkBox></presentation>
+			<presentation id="ChatToolsAutoApprove"><checkBox refId="ChatToolsAutoApprove">ChatToolsAutoApprove</checkBox></presentation>
+			<presentation id="ChatToolsEligibleForAutoApproval"><multiTextBox refId="ChatToolsEligibleForAutoApproval" /></presentation>
+			<presentation id="Claude3PIntegration"><checkBox refId="Claude3PIntegration">Claude3PIntegration</checkBox></presentation>
+			<presentation id="Codex3PIntegration"><checkBox refId="Codex3PIntegration">Codex3PIntegration</checkBox></presentation>
+			<presentation id="CopilotNextEditSuggestions"><checkBox refId="CopilotNextEditSuggestions">CopilotNextEditSuggestions</checkBox></presentation>
+			<presentation id="CopilotOtelCaptureContent"><checkBox refId="CopilotOtelCaptureContent">CopilotOtelCaptureContent</checkBox></presentation>
+			<presentation id="CopilotOtelEnabled"><checkBox refId="CopilotOtelEnabled">CopilotOtelEnabled</checkBox></presentation>
+			<presentation id="CopilotOtelEndpoint"><textBox refId="CopilotOtelEndpoint"><label>CopilotOtelEndpoint:</label></textBox></presentation>
+			<presentation id="CopilotOtelHeaders"><multiTextBox refId="CopilotOtelHeaders" /></presentation>
+			<presentation id="CopilotOtelOtlpProtocol"><textBox refId="CopilotOtelOtlpProtocol"><label>CopilotOtelOtlpProtocol:</label></textBox></presentation>
+			<presentation id="CopilotOtelOutfile"><textBox refId="CopilotOtelOutfile"><label>CopilotOtelOutfile:</label></textBox></presentation>
+			<presentation id="CopilotOtelProtocol"><dropdownList refId="CopilotOtelProtocol" /></presentation>
+			<presentation id="CopilotOtelResourceAttributes"><multiTextBox refId="CopilotOtelResourceAttributes" /></presentation>
+			<presentation id="CopilotOtelServiceName"><textBox refId="CopilotOtelServiceName"><label>CopilotOtelServiceName:</label></textBox></presentation>
+			<presentation id="CopilotReviewAgent"><checkBox refId="CopilotReviewAgent">CopilotReviewAgent</checkBox></presentation>
+			<presentation id="CopilotReviewSelection"><checkBox refId="CopilotReviewSelection">CopilotReviewSelection</checkBox></presentation>
+			<presentation id="CopilotSessionSync"><checkBox refId="CopilotSessionSync">CopilotSessionSync</checkBox></presentation>
+			<presentation id="DictationEnabled"><checkBox refId="DictationEnabled">DictationEnabled</checkBox></presentation>
+			<presentation id="DictationLLMCleanup"><checkBox refId="DictationLLMCleanup">DictationLLMCleanup</checkBox></presentation>
+			<presentation id="DictationModel"><dropdownList refId="DictationModel" /></presentation>
+			<presentation id="McpEnterpriseManagedAuthIdp"><multiTextBox refId="McpEnterpriseManagedAuthIdp" /></presentation>
+			<presentation id="McpGalleryServiceUrl"><textBox refId="McpGalleryServiceUrl"><label>McpGalleryServiceUrl:</label></textBox></presentation>
+			<presentation id="AllowedExtensions"><multiTextBox refId="AllowedExtensions" /></presentation>
+			<presentation id="ExtensionGalleryAuthProvider"><dropdownList refId="ExtensionGalleryAuthProvider" /></presentation>
+			<presentation id="ExtensionGalleryServiceUrl"><textBox refId="ExtensionGalleryServiceUrl"><label>ExtensionGalleryServiceUrl:</label></textBox></presentation>
+			<presentation id="ExtensionsAutoUpdate"><dropdownList refId="ExtensionsAutoUpdate" /></presentation>
+			<presentation id="ExtensionsAutoUpdateDelay"><decimalTextBox refId="ExtensionsAutoUpdateDelay" defaultValue="12">ExtensionsAutoUpdateDelay</decimalTextBox></presentation>
+			<presentation id="ChatAgentSandboxAllowAutoApprove"><checkBox refId="ChatAgentSandboxAllowAutoApprove">ChatAgentSandboxAllowAutoApprove</checkBox></presentation>
+			<presentation id="ChatAgentSandboxAllowNetwork"><checkBox refId="ChatAgentSandboxAllowNetwork">ChatAgentSandboxAllowNetwork</checkBox></presentation>
+			<presentation id="ChatAgentSandboxAllowUnsandboxedCommands"><checkBox refId="ChatAgentSandboxAllowUnsandboxedCommands">ChatAgentSandboxAllowUnsandboxedCommands</checkBox></presentation>
+			<presentation id="ChatAgentSandboxEnabled"><dropdownList refId="ChatAgentSandboxEnabled" /></presentation>
+			<presentation id="ChatToolsTerminalEnableAutoApprove"><checkBox refId="ChatToolsTerminalEnableAutoApprove">ChatToolsTerminalEnableAutoApprove</checkBox></presentation>
+			<presentation id="EnableFeedback"><checkBox refId="EnableFeedback">EnableFeedback</checkBox></presentation>
+			<presentation id="TelemetryLevel"><dropdownList refId="TelemetryLevel" /></presentation>
+			<presentation id="UpdateMode"><dropdownList refId="UpdateMode" /></presentation>
+		</presentationTable>
+	</resources>
+</policyDefinitionResources>
